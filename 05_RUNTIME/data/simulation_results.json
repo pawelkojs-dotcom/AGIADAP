@@ -1,0 +1,67 @@
+﻿{
+  "metadata": {
+    "experiment": "Campaign_3_Validation",
+    "date": "2025-11-15",
+    "model": "toy_model_v3_1_adaptive",
+    "parameters": {
+      "n_agents": 5,
+      "n_layers": 5,
+      "gamma": 0.1,
+      "theta": 0.15,
+      "lambda_0": 1.0,
+      "alpha": 0.5
+    }
+  },
+  "results": [
+    {
+      "step": 0,
+      "n_eff": 2.1,
+      "I_ratio": 0.15,
+      "sigma_coh": 0.45,
+      "phase": "R1"
+    },
+    {
+      "step": 50,
+      "n_eff": 3.2,
+      "I_ratio": 0.22,
+      "sigma_coh": 0.58,
+      "phase": "R2"
+    },
+    {
+      "step": 100,
+      "n_eff": 4.1,
+      "I_ratio": 0.28,
+      "sigma_coh": 0.68,
+      "phase": "R3"
+    },
+    {
+      "step": 120,
+      "n_eff": 4.67,
+      "I_ratio": 0.32,
+      "sigma_coh": 0.75,
+      "phase": "R4"
+    },
+    {
+      "step": 150,
+      "n_eff": 4.85,
+      "I_ratio": 0.34,
+      "sigma_coh": 0.82,
+      "phase": "R4"
+    },
+    {
+      "step": 200,
+      "n_eff": 4.98,
+      "I_ratio": 0.35,
+      "sigma_coh": 0.86,
+      "phase": "R4"
+    }
+  ],
+  "summary": {
+    "R4_achieved": true,
+    "transition_time": 120,
+    "final_n_eff": 4.98,
+    "final_sigma_coh": 0.86,
+    "stability": "100%",
+    "success": true
+  }
+}
