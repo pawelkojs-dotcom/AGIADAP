@@ -1,0 +1,48 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Adaptonic Sigma Storage Schema",
+  "description": "Standard format for shared adaptonic memory",
+  "version": "1.0.0",
+  
+  "type": "object",
+  "required": ["version", "last_updated", "memory_semantic", "sigma_state"],
+  "properties": {
+    "version": {"type": "string"},
+    "last_updated": {"type": "string", "format": "date-time"},
+    "memory_semantic": {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "content": {"type": "string"},
+              "status": {"type": "string", "enum": ["provisional", "confirmed", "deprecated"]},
+              "evidence": {"type": "array"},
+              "project": {"type": "string"},
+              "confidence": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "sigma_state": {
+      "type": "object",
+      "properties": {
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "coherence_score": {"type": "number"},
+              "open_questions": {"type": "array"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
