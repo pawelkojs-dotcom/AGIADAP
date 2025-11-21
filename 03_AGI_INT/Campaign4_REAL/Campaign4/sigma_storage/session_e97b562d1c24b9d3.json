@@ -1,0 +1,26 @@
+{
+  "session_id": "garden_planning",
+  "goal": "Design a permaculture garden",
+  "plan": "I'd love to help you design a permaculture garden! To give you the best recommendations, could you share some details about your space?\n\n**Key information that would help:**\n- Location/climate zone\n- Yard size and current conditions\n- Sunlight patterns\n- Soil type (if known)\n- Your goals (food production, wildlife habitat, etc.)\n\n**Here's a general permaculture framework to get started:**\n\n## **Core Zones**\n- **Zone 1**: Herbs and daily-harvest plants near your house\n- **Zone 2**: Vegetable beds and small fruit bushes\n- **Zone 3**: Larger fruit trees and storage crops\n- **Zone 4**: Orchard, nuts, pasture (if space allows)\n- **Zone 5**: Wild/natural area for wildlife\n\n## **Essential Elements**\n- **Water management**: Rain catchment, swales, mulch\n- **Soil building**: Compost, cover crops, no-till methods\n- **Plant guilds**: Companion plantings that support each other\n- **Perennial focus**: Trees, shrubs, and perennial vegetables\n- **Wildlife habitat**: Native plants, diverse layers\n\n## **Simple Starting Steps**\n1. Observe your space through seasons\n2. Start composting\n3. Plant a fruit tree with companion herbs\n4. Create a small food forest guild\n5. Install water collection system\n\nWhat's your yard like? I can get more specific with the right details!",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:09:24.930059",
+  "last_accessed": "2025-11-21T19:09:41.752641",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:09:24.930094",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:09:33.809218",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:09:41.752664",
+      "strength": 0.6400000000000001
+    }
+  ]
+}
