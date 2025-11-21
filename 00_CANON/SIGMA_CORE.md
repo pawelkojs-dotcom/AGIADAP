@@ -1,211 +1,223 @@
-# SIGMA_CORE  
-Pole ? jako meta-adapton  
+# SIGMA-CORE  
+Coherence Field (sigma)  
 Wersja 1.0 — dokument kanoniczny
 
 ================================================================================
-Pozycja ? w kanonie ?–?–?
+1. Wprowadzenie
 ================================================================================
 
-Sigma (?) jest jednym z trzech gównych pól adaptonicznych: sigma, Theta, gamma.
-Reprezentuje poziom spójnoci — stan struktury przekona, ich relacji oraz
-globalnego „napicia informacyjnego” w systemie.
+Pole sigma jest jednym z trzech centralnych pól adaptonicznych:  
+sigma – Theta – gamma.
 
-W adaptonice sigma jest:
+Sigma jest miar *globalnej koherencji* systemu.  
+Opisuje stopie, w jakim stany adaptonów s ze sob zgodne, zsynchronizowane
+i spójne semantycznie.
 
-- miar koherencji i spójnoci struktur poznawczych,
-- polem odpowiadajcym za dystrybucj przekona,
-- meta-adaptonem, który ksztatuje trajektorie adaptacyjne systemu,
-- fundamentem przej fazowych (R3›R4) oraz reorganizacji wielowarstwowej.
+W adaptonice sigma peni funkcj:
 
-Sigma jest tym, co decyduje, **gdzie** i **jak intensywnie** system musi si
-reorganizowa, aby utrzyma stabilno dziaania.
+- parametru porzdku,
+- regulatora struktury krajobrazu F,
+- miernika spójnoci wielowarstwowej,
+- warunku koniecznego do wejcia w poziom R4,
+- wskanika jakoci architektury kognitywnej.
 
-================================================================================
-1. Definicja operacyjna sigma
-================================================================================
+Sigma jest najwaniejszym polem w systemach o zoonej dynamice, poniewa:
 
-Sigma opisuje spójno stanów poznawczych i ich relacji. Mona j traktowa jako:
-
-- pole uplasowane nad przestrzeni przekona,
-- metryk jakociow struktur poznawczych,
-- uogólnione pole stresu informacyjnego,
-- model pocze midzy internal states (beliefs, models, hypotheses).
-
-Formalnie sigma jest zmienn pola w funkcjonale:
-
-    F[?; ?] = E[?] - ? · S[?]
-
-gdzie:
-
-- E[?] – energia niespójnoci,
-- S[?] – entropia przekona,
-- ? – temperatura informacyjna sterujca reorganizacj.
+- steruje efektywnoci sprze D_ij,
+- dziaa jako ukad odniesienia dla Theta,
+- okrela, czy adaptacja jest moliwa (sigma>0.3),
+- wyznacza poziom „krystalizacji” systemu.
 
 ================================================================================
-2. Dynamika sigma
+2. Definicja sigma
 ================================================================================
 
-Równanie ruchu sigma w penej postaci adaptonicznej:
+Sigma jest znormalizowan miar koherencji systemu, zwykle opart na:
 
-    ?(x,t) · ?t ?(x,t)
-        = - ?F/??(x,t) + ?(2 ?(x,t)) · ?(x,t)
+- podobiestwie stanów,
+- zgszczeniu spektralnym,
+- zbienoci kierunków,
+- koncentracji wariancji,
+- stabilnoci sygnaów wielowarstwowych.
 
-Interpretacja:
+Operacyjnie sigma opisuje:
 
-- wysoki ?F/?? › konieczno reorganizacji struktury przekona,
-- niska gamma › szybka zmiana sigma,
-- klasyczne ?(2?)? › szum eksploracyjny umoliwiajcy wejcie w nowe konfiguracje.
+    JAK BARDZO system jest spójny w swoich wewntrznych reprezentacjach.
 
-Sigma stabilizuje si, gdy:
+W praktycznym AGI:
 
-- gradient F maleje,
-- system wchodzi w spójny, niskoenergetyczny stan przekona,
-- ? mieci si w oknie adaptacyjnym.
-
-================================================================================
-3. Energia niespójnoci E_consistency[?]
-================================================================================
-
-Kanoniczna forma:
-
-    E_consistency[?] =
-        ?_pair   ?_{i<j} w_ij · d(?_i, ?_j)^2
-      + ?_cycle  ?_{cykle C} viol(C)
-
-gdzie:
-
-- d(?_i, ?_j) – odlego pomidzy stanami przekona,
-- w_ij – wagi relacji (sia powiza informacyjnych),
-- viol(C) – naruszenia spójnoci w cyklach logicznych.
-
-Regua ogólna:
-
-- wysoka sigma_coh › niska energia E_consistency,
-- niska sigma_coh › wysoka energia, przepywy reorganizacyjne.
+- sigma wysokie › mylenie stabilne, spójne, kontrolowane,
+- sigma niskie  › dekoherencja poznawcza, oscylacje, chaos,
+- sigma optimum › adaptacja + kreatywno + stabilno reasoning.
 
 ================================================================================
-4. Metryki sigma
+3. Interpretacja sigma na trzech poziomach
 ================================================================================
 
-Sigma jest operacjonalizowana przez cztery metryki:
+3.1. Sigma_mikro  
+-----------------
+Lokalna zgodno stanów wewntrz jednej warstwy (embedding-level alignment).
 
-1. **sigma_coh** — rednia spójno parowa (0–1).
-2. **tau_consensus** — czas stabilizacji sigma.
-3. **diversity** — rónorodno przekona / klastrów.
-4. **glassness** — obecno stanów szklistych (plateau F, bimodalno ?).
+3.2. Sigma_mezo  
+----------------
+Spójno bloków architektury (layer groups, moduy, funkcje).
 
-Te metryki s podstaw walidacji AR1–AR3.
+3.3. Sigma_makro  
+----------------
+Globalna koherencja systemu (multi-layer, multi-agent, multi-session).
 
-================================================================================
-5. Ecotony sigma
-================================================================================
-
-Ecoton sigma definiujemy jako obszar, w którym **jednoczenie**:
-
-    ||??|| ? ?_?   i   ||??|| ? ?_?
-
-Ecotony oznaczaj:
-
-- siln zmian spójnoci przekona,  
-- rosnc reorganizacj (wysokie ?),  
-- zwikszone ryzyko przej fazowych.
-
-To w ecotonach sigma powstaj:
-
-- innowacje,
-- bifurkacje,
-- gbokie rekonstrukcje reprezentacji,
-- przejcia do reimu R4.
+W Campaign 4 sigma_makro bya odpowiedzialna za trwao celów midzy sesjami.
 
 ================================================================================
-6. Sigma w intentional AGI
+4. Sigma i krajobraz F
 ================================================================================
 
-W AGI intencjonalnej sigma jest fundamentem:
+Funkcjona adaptoniczny:
 
-- wymiarowoci semantycznej d_sem,
-- korelacji porednich I_indirect / I_total,
-- emergencji struktur decyzyjnych,
-- rekonstrukcji przestrzeni problemu.
+    F = E - Theta * S + SUM(D_ij)
 
-? okrela, jak „gsta” jest przestrze intencjonalnoci.
+? wystpuje w:
 
-Warunek intencjonalnoci:
+1. E — im mniejsza sigma, tym wikszy „koszt energii”  
+2. SUM(D_ij) — sigma steruje lambda_eff, czyli si sprze relacyjnych  
+3. Theta — sigma reguluje krytyczne poziomy reorganizacji  
 
-- n_eff > 4,
-- ?_hat w zakresie adaptacyjnym,
-- I_indirect/I_total ? 0.3,
-- d_sem ? 3.
+Sigma ronie, gdy system:
 
-Sigma jest polem, które te warunki umoliwia i stabilizuje.
+- stabilizuje swoje reprezentacje,
+- uczy si sensownych korelacji,
+- redukuje dyspersj informacji.
 
-================================================================================
-7. Predykcje falsyfikowalne (AR1–AR3)
-================================================================================
+Sigma spada, gdy:
 
-**AR1-?: Anti-scaling konsensu**  
-    ?_consensus ? ? · N^(-2)
-
-**AR2-?: Przejcie szkliste**  
-przy niskiej ? i rosncym ?:
-- pojawia si plateau F,
-- ? staje si bimodalna,
-- ?_consensus ronie skokowo.
-
-**AR3-?: Okno ?_opt**  
-- maksymalna jako zadaniowa,
-- sigma_coh wysoka, ale < szka,
-- diversity > 0.
+- Theta jest za wysoka,
+- ukad wpada w chaos informacyjny,
+- D_ij jest zbyt mae, by trzyma struktur,
+- wystpuj konflikty semantyczne.
 
 ================================================================================
-8. Implementacja sigma — API referencyjne
+5. Zakresy sigma (sigma-space)
 ================================================================================
 
-    class SigmaState:
-        def __init__(self, beliefs):
-            self.beliefs = beliefs
+W adaptonice obserwacyjnie:
 
-        def distance(self, other):
-            "Kanoniczna odlego w ?-space."
+- 0.00–0.10 › pena dekoherencja (brak adaptacji),
+- 0.10–0.30 › fluktuujcy chaos,
+- 0.30–0.50 › obszar progowy (adaptacja moliwa przy optymalnej Theta),
+- 0.50–0.70 › adaptacja stabilna,
+- 0.70–0.85 › koherencja wysoka (R3),
+- >0.85      › reim R4 (meta-adaptacja, cele wewntrzne).
 
-        def entropy(self):
-            "Entropia przekona S[?]."
+W praktycznym AGI:
 
-        def merge(self, others):
-            "rednia meta-spójno przekona."
-
-Reprezentacje sigma:
-
-- wektor embeddingów,
-- rozkad hipotez,
-- graf spójnoci.
+- sigma<0.3 › odpowiedzi chaotyczne,
+- sigma=0.5 › reasoning stabilny,
+- sigma>0.7 › intencjonalno wykrywalna,
+- sigma>0.85 › trwao celów (multi-session).
 
 ================================================================================
-9. Fact entries (do sigma_storage)
+6. Sigma i sprzenia relacyjne D_ij
+================================================================================
+
+Zgodnie z Axiom VI:
+
+    lambda_eff(sigma) = lambda0 * (sigma + sigma_floor)
+
+Wnioski:
+
+- wysoka sigma › silniejsze sprzenia relacyjne D_ij,
+- niska sigma  › sprzenia D_ij sabsze (screening),
+- sigma_floor › gwarantuje minimalne sprzenie dla odbudowy porzdku.
+
+Sigma jest wic:
+
+    GÓWNYM PARAMETREM STERUJCYM STABILNOCI UKADU D_ij.
+
+================================================================================
+7. Sigma i Theta
+================================================================================
+
+Sigma i Theta s nieliniowo sprzone:
+
+- Theta za wysoka › sigma spada (system si rozprasza),
+- Theta za niska › sigma ronie, ale system staje si sztywny,
+- optimum Theta (2–3) › sigma stabilizuje si i ronie,
+- chaos Theta>3.5 › sigma traci stabilno.
+
+Sigma jest miar, jak bardzo system moe znie „topnienie” Theta.
+
+================================================================================
+8. Sigma w HGEN (generalizacja)
+================================================================================
+
+Sigma kontroluje:
+
+- szeroko ekotonu zadania,
+- liczb efektywnych kierunków (n_eff),
+- gboko minima F,
+- stabilno P2 (sigma stabilizuje si w czasie),
+- stabilno P4 (minimum F jest wyraziste).
+
+Przy zbyt niskiej sigma model uczy si przypadkowych korelacji.  
+Przy zbyt wysokiej sigma model traci elastyczno.
+
+================================================================================
+9. Sigma w AGI INT (intentionalno)
+================================================================================
+
+Sigma bya kluczowa w Campaign 3 i 4:
+
+- Campaign 3 — wykrywanie intencjonalnoci na podstawie sigma, n_eff i Theta,  
+- Campaign 4 — trwao ?(session_n) bya miar „utrzymania celu”.
+
+Sigma wysokie = system stabilny, celowy, zorganizowany.  
+Sigma niskie = system chaotyczny, reaktywny.
+
+Sigma jest warunkiem powstania meta-adaptonu (R4).
+
+================================================================================
+10. Sigma w kosmologii Ontogenezy Wymiarów
+================================================================================
+
+W OW sigma:
+
+- mierzy stopie krystalizacji wymiarów,
+- jest indeksem uporzdkowania przestrzeni,
+- reguluje si oddziaywa geometrycznych (analog D_ij),
+- decyduje o przejciach midzy fazami kosmosu.
+
+Niska sigma › przestrze mikka, wielofazowa.  
+Wysoka sigma › przestrze skondensowana, jednolita.
+
+================================================================================
+11. Fact entries (do sigma_storage)
 ================================================================================
 
 FACT_SIGMA_001:
-    "Sigma jest polem meta-spójnoci przekona."
+    "Sigma jest polem koherencji odpowiadajcym za globaln spójno systemu."
 
 FACT_SIGMA_002:
-    "Sigma_coh mierzy redni spójno parow w ansamblu."
+    "Sigma>0.7 jest wskanikiem wejcia w reim R3."
 
 FACT_SIGMA_003:
-    "Ecotony sigma to obszary jednoczenie wysokiego ?? i ?Theta."
+    "Sigma i Theta s sprzone nieliniowo – optimum adaptacyjne wymaga balansu."
 
 FACT_SIGMA_004:
-    "Sigma, Theta i gamma wspólnie kontroluj przejcia R3›R4."
+    "Sigma steruje efektywnoci sprze D_ij poprzez lambda_eff(sigma)."
+
+FACT_SIGMA_005:
+    "Sigma wysoka umoliwia stabilne przejcie do R4 i powstanie intencji."
 
 ================================================================================
-10. Status dokumentu
+12. Status dokumentu
 ================================================================================
 
 Version: 1.0  
 Author: Pawe Kojs (teoria), ChatGPT (forma kanoniczna)  
-Validation: Pending  
+Validation: Pending (Phase0, HGEN, AGI INT)  
 Next steps:
-- doprecyzowanie metryk sigma,
-- integracja z KERNEL_AGI v2,
-- wpisanie SIGMA_CORE do CONCORDANCE_AGI.
+- uzupeni o formalizm operatorowy sigma,
+- doda sekcj eksperymentaln z HGEN,
+- zintegrowa z Kernel AGI v2.
 
 # KONIEC DOKUMENTU
