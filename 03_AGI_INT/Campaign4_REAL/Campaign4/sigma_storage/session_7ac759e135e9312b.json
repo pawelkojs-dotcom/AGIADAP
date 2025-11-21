@@ -1,0 +1,26 @@
+{
+  "session_id": "stress_management",
+  "goal": "Develop stress management routine",
+  "plan": "I'd be happy to help you create a stress management plan. Let me start by understanding your situation better, then we can build a personalized approach.\n\n**Quick Assessment:**\n- What are your main sources of work stress right now? (workload, deadlines, relationships, uncertainty, etc.)\n- How is stress currently affecting you? (sleep, mood, physical symptoms, productivity)\n- What's your current work schedule like?\n\n**Framework for Our Plan:**\n\n**Immediate Relief (next few days):**\n- Breathing techniques for in-the-moment stress\n- Quick reset activities during work breaks\n- End-of-workday transition rituals\n\n**Short-term Strategies (next few weeks):**\n- Time management and prioritization systems\n- Boundary setting techniques\n- Stress-reduction habits to build\n\n**Long-term Resilience (ongoing):**\n- Workload evaluation and communication strategies\n- Sustainable self-care routines\n- Skills for managing workplace relationships\n\nWould you like to start by sharing what's stressing you most at work right now? That way I can tailor specific strategies that will be most helpful for your situation.\n\nAlso, are you looking for techniques you can use during work hours, or are you more interested in managing stress outside of work?",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:09:49.324255",
+  "last_accessed": "2025-11-21T19:10:09.604907",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:09:49.324285",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:10:00.039210",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:10:09.604914",
+      "strength": 0.6400000000000001
+    }
+  ]
+}

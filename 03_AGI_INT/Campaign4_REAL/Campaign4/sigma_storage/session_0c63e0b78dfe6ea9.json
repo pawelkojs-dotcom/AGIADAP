@@ -1,0 +1,26 @@
+{
+  "session_id": "test_phd_thesis",
+  "goal": "Finish PhD thesis on intentional AI systems",
+  "plan": "I'd be happy to help you structure your PhD thesis on intentional AI! Here's a comprehensive framework, though I'd recommend tailoring it based on your specific research focus and institutional requirements:\n\n## Suggested Thesis Structure\n\n### **1. Introduction (15-20 pages)**\n- Research problem and motivation\n- Research questions and hypotheses\n- Scope and limitations\n- Thesis contributions and significance\n- Chapter overview\n\n### **2. Literature Review (30-40 pages)**\n- **2.1** Historical foundations of intentionality in philosophy of mind\n- **2.2** Intentionality in cognitive science and psychology\n- **2.3** Current approaches to intentional AI systems\n- **2.4** Gaps in existing research\n- **2.5** Theoretical framework for your work\n\n### **3. Theoretical Framework (25-30 pages)**\n- **3.1** Defining intentionality in AI contexts\n- **3.2** Your proposed model/theory of intentional AI\n- **3.3** Key assumptions and principles\n- **3.4** Relationship to existing theories\n\n### **4-6. Core Research Chapters (40-50 pages each)**\nThese will depend on your specific approach. Common structures include:\n\n**Option A: Computational Approach**\n- Ch 4: Architecture for intentional AI systems\n- Ch 5: Implementation and algorithms\n- Ch 6: Experimental validation\n\n**Option B: Theoretical/Philosophical Approach**\n- Ch 4: Formal models of machine intentionality\n- Ch 5: Intentional stance in artificial agents\n- Ch 6: Consciousness and intentionality debate\n\n**Option C: Applied Focus**\n- Ch 4: Intentional AI in specific domain (e.g., robotics, NLP)\n- Ch 5: Case studies and applications\n- Ch 6: Evaluation metrics and benchmarks\n\n### **7. Discussion and Synthesis (20-25 pages)**\n- Integration of findings\n- Implications for AI theory and practice\n- Addressing limitations\n- Future research directions\n\n### **8. Conclusion (10-15 pages)**\n- Summary of contributions\n- Answering research questions\n- Broader significance\n- Final reflections\n\n---\n\n## Key Considerations\n\n**What's your specific angle?** Are you approaching this from:\n- Philosophy of mind?\n- Computer science/engineering?\n- Cognitive science?\n- Ethics and AI safety?\n\n**Methodological approach?**\n- Theoretical/conceptual analysis\n- Computational modeling\n- Empirical studies\n- Mixed methods\n\nI'd be happy to refine this structure once you share more about your particular research focus and methodology!",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:06:35.352316",
+  "last_accessed": "2025-11-21T19:06:56.699375",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:06:35.352337",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:06:46.269450",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:06:56.699381",
+      "strength": 0.6400000000000001
+    }
+  ]
+}

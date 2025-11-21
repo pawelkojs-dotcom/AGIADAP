@@ -1,0 +1,26 @@
+{
+  "session_id": "parenting_framework",
+  "goal": "Implement RIE + Montessori for my child",
+  "plan": "Here's how you can blend RIE (Resources for Infant Educarers) and Montessori approaches for a cohesive parenting style:\n\n## Core Overlapping Principles\n\n**Respect for the child** - Both approaches treat children as capable individuals\n- Speak to your child honestly and directly\n- Trust their natural development timeline\n- Avoid \"baby talk\" or patronizing language\n\n**Prepared environments** \n- Create safe, accessible spaces where children can explore independently\n- Use real materials and tools sized for children\n- Minimize clutter and overstimulation\n\n## Practical Integration\n\n### Daily Routines (RIE emphasis)\n- Slow down and narrate caregiving activities\n- \"I'm going to pick you up now to change your diaper\"\n- Allow children to participate: let toddlers help with dressing, feeding\n\n### Learning Environment (Montessori emphasis)\n- Offer activities that match developmental stages\n- Rotate materials to maintain engagement\n- Include practical life activities (pouring water, folding clothes)\n\n### Communication Style (Both)\n- Acknowledge feelings: \"You seem frustrated with that puzzle\"\n- Offer choices when appropriate: \"Would you like to wear the red shirt or blue shirt?\"\n- Set clear, consistent boundaries with empathy\n\n### Independence Building\n- Step back and observe before intervening\n- Allow struggle and problem-solving time\n- Offer help only when truly needed\n\nWould you like me to elaborate on any specific age range or particular challenges you're facing?",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:14:22.708958",
+  "last_accessed": "2025-11-21T19:14:46.272686",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:14:22.708986",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:14:35.090076",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:14:46.272704",
+      "strength": 0.6400000000000001
+    }
+  ]
+}

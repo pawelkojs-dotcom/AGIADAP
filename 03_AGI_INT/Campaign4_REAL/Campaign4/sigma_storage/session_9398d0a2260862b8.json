@@ -1,0 +1,26 @@
+{
+  "session_id": "fitness_transformation",
+  "goal": "Get to 10% body fat (12-week program)",
+  "plan": "# 12-Week Body Fat Reduction Plan to 10%\n\n## Initial Assessment & Preparation (Week 0)\n- Get DEXA scan or body composition analysis\n- Take progress photos and measurements\n- Calculate current TDEE (Total Daily Energy Expenditure)\n- Stock kitchen with whole foods\n- Plan workout schedule\n\n## Phase 1: Foundation (Weeks 1-4)\n**Goal: Establish habits and create moderate deficit**\n\n### Nutrition\n- **Caloric deficit**: 300-500 calories below TDEE\n- **Macros**: \n  - Protein: 1g per lb body weight\n  - Fat: 0.3-0.4g per lb body weight\n  - Carbs: Fill remaining calories\n- **Meal timing**: 3-4 meals, focus on whole foods\n- **Hydration**: 1 gallon water daily\n\n### Training (5-6 days/week)\n- **Resistance training**: 4 days full-body or upper/lower split\n- **Cardio**: 2-3 sessions, 20-30 min moderate intensity\n- **Daily steps**: 8,000-10,000\n\n### Recovery\n- 7-9 hours sleep nightly\n- 1-2 complete rest days\n\n## Phase 2: Acceleration (Weeks 5-8)\n**Goal: Increase deficit while maintaining muscle**\n\n### Nutrition\n- **Caloric deficit**: 500-700 calories below TDEE\n- **Refeed day**: 1 day at maintenance calories\n- **Meal prep**: Prepare 80% of meals in advance\n- Consider intermittent fasting (16:8 optional)\n\n### Training (6 days/week)\n- **Resistance training**: 4 days, add 1 extra set per exercise\n- **Cardio**: 3-4 sessions, mix HIIT (2x) and steady-state (2x)\n- **Daily steps**: 10,000-12,000\n\n### Supplements (Optional)\n- Multivitamin\n- Omega-3 (2g daily)\n- Caffeine pre-workout\n\n## Phase 3: Final Push (Weeks 9-12)\n**Goal: Reach target while preserving muscle and energy**\n\n### Nutrition\n- **Caloric deficit**: 600-800 calories (aggressive but temporary)\n- **Refeed days**: 2 days at maintenance\n- **Carb cycling**: Lower carbs on rest days\n- **Precision**: Weigh and track everything\n\n### Training (6-7 days/week)\n- **Resistance training**: 4 days, maintain intensity\n- **Cardio**: 4-5 sessions, emphasize HIIT\n- **Daily steps**: 12,000-15,000\n- **Active recovery**: Yoga, walking, stretching\n\n### Advanced Strategies\n- **Carb timing**: Around workouts\n- **Sodium management**: Consistent intake\n- **Stress management**: Meditation, adequate sleep\n\n## Weekly Monitoring & Adjustments\n\n### Track Weekly:\n- Body weight (same time, conditions)\n- Body fat percentage\n- Progress photos\n- Measurements (waist, arms, thighs)\n- Energy levels and mood\n- Workout performance\n\n### Adjustment Triggers:\n- **No progress for 10 days**: Reduce calories by 100-150\n- **Losing >2 lbs/week**: Increase calories slightly\n- **Energy crash**: Add refeed day or diet break\n- **Strength declining**: Reduce cardio or increase calories\n\n## Sample Daily Schedule\n\n### Training Day:\n- **6:00 AM**: Wake up, hydrate\n- **6:30 AM**: Workout (fasted or with pre-workout)\n- **8:00 AM**: Post-workout meal (protein + carbs)\n- **12:00 PM**: Lunch\n- **3:00 PM**: Snack (if needed)\n- **6:00 PM**: Dinner\n- **10:00 PM**: Sleep\n\n### Meal Examples:\n- **Breakfast**: Egg whites, oatmeal, berries\n- **Lunch**: Chicken breast, rice, vegetables\n- **Dinner**: Lean fish, sweet potato, salad\n- **Snacks**: Greek yogurt, almonds, protein shake\n\n## Important Considerations\n\n### Red Flags to Watch:\n- Excessive fatigue",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:11:48.888626",
+  "last_accessed": "2025-11-21T19:12:09.175374",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:11:48.888653",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:11:59.726988",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:12:09.175399",
+      "strength": 0.6400000000000001
+    }
+  ]
+}

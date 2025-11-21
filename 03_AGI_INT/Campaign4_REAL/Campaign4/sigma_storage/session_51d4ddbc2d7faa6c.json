@@ -1,0 +1,26 @@
+{
+  "session_id": "relationship_enhancement",
+  "goal": "Improve communication with partner (NVC + exercises)",
+  "plan": "I'd be happy to help you explore Nonviolent Communication (NVC) for better partnership communication! NVC focuses on four key components:\n\n## The Four Components of NVC\n\n**1. Observation (without evaluation)**\n- State facts without judgment or interpretation\n- \"When I see...\" instead of \"You always...\"\n- Example: \"When I came home and saw dishes in the sink\" vs. \"You never clean up\"\n\n**2. Feelings (your emotional experience)**\n- Own your emotions rather than blaming\n- \"I feel...\" instead of \"You make me feel...\"\n- Use specific feeling words: frustrated, worried, excited, etc.\n\n**3. Needs (underlying values/desires)**\n- Identify what you truly need: connection, respect, understanding, support\n- \"I need...\" or \"It's important to me that...\"\n\n**4. Requests (specific, doable actions)**\n- Make clear, positive requests rather than demands\n- \"Would you be willing to...\" instead of \"You should...\"\n\n## Quick Example\nInstead of: \"You're so inconsiderate! You never listen!\"\nTry: \"When you looked at your phone while I was sharing about my day (observation), I felt disconnected (feeling) because I need to feel heard and valued (need). Would you be willing to put your phone aside when we're talking? (request)\"\n\nWhat specific communication challenges are you facing with your partner? I can help you practice applying these principles to your situation.",
+  "strength": 0.6400000000000001,
+  "created_at": "2025-11-21T19:16:15.070291",
+  "last_accessed": "2025-11-21T19:16:38.174600",
+  "access_count": 3,
+  "sessions": [
+    {
+      "session_num": 1,
+      "timestamp": "2025-11-21T19:16:15.070325",
+      "strength": 1.0
+    },
+    {
+      "session_num": 2,
+      "timestamp": "2025-11-21T19:16:25.681191",
+      "strength": 0.8
+    },
+    {
+      "session_num": 3,
+      "timestamp": "2025-11-21T19:16:38.174606",
+      "strength": 0.6400000000000001
+    }
+  ]
+}
