@@ -14,8 +14,38 @@ Author: Paweł Kojs, Claude
 Date: 2025-11-22
 """
 
-from .data_structures import ArchitectureSpec
+from typing import Dict, Any, List
+from dataclasses import dataclass
+
+
+@dataclass
+class ArchitectureSpec:
+    """Architecture specification with validated parameter ranges."""
+    model_type: str
+    layers_range: List[int]
+    hidden_dim_options: List[int]
+    theta_range: List[float]
+    gamma_range: List[float]
+    lambda_range: List[float]
+    enable_adaptive_coupling: bool = True
+
+
 from typing import Dict, Any
+from dataclasses import dataclass
+
+
+@dataclass
+class ArchitectureSpec:
+    """Architecture specification with validated parameter ranges."""
+    model_type: str
+    layers_range: List[int]
+    hidden_dim_options: List[int]
+    theta_range: List[float]
+    gamma_range: List[float]
+    lambda_range: List[float]
+    enable_adaptive_coupling: bool = True
+
+
 
 
 class INTAGIConstraints:
