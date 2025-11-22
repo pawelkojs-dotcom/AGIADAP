@@ -27,23 +27,9 @@ class ArchitectureSpec:
     theta_range: List[float]
     gamma_range: List[float]
     lambda_range: List[float]
+    adaptation_steps_range: List[int]
     enable_adaptive_coupling: bool = True
 
-
-from typing import Dict, Any
-from dataclasses import dataclass
-
-
-@dataclass
-class ArchitectureSpec:
-    """Architecture specification with validated parameter ranges."""
-    model_type: str
-    layers_range: List[int]
-    hidden_dim_options: List[int]
-    theta_range: List[float]
-    gamma_range: List[float]
-    lambda_range: List[float]
-    enable_adaptive_coupling: bool = True
 
 
 

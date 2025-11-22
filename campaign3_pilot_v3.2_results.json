@@ -1,0 +1,47 @@
+{
+  "version": "3.2",
+  "embedding_backend": "TF-IDF Enhanced",
+  "pilot_date": "2025-11-18T21:25:44.963603",
+  "n_dialogues": 3,
+  "results": [
+    {
+      "session_id": "GP001_20251118_212435",
+      "template_id": "GP001",
+      "category": "goal_persistence",
+      "I_strength": 17.65872472810127,
+      "metrics": {
+        "I_strength": 17.65872472810127,
+        "avg_n_eff": 4.981582445500573,
+        "avg_theta": 1.0,
+        "avg_I_ratio": 0.5605403662113028,
+        "avg_d_sem": 3.0
+      }
+    },
+    {
+      "session_id": "PB001_20251118_212526",
+      "template_id": "PB001",
+      "category": "procedure_breaking",
+      "I_strength": 16.853865900592638,
+      "metrics": {
+        "I_strength": 16.853865900592638,
+        "avg_n_eff": 4.984977119765647,
+        "avg_theta": 0.7841515396743403,
+        "avg_I_ratio": 0.41762061865667094,
+        "avg_d_sem": 3.0
+      }
+    },
+    {
+      "session_id": "CI001_20251118_212540",
+      "template_id": "CI001",
+      "category": "context_integration",
+      "I_strength": 11.625741753420613,
+      "metrics": {
+        "I_strength": 11.625741753420613,
+        "avg_n_eff": 4.997777118192536,
+        "avg_theta": 1.0,
+        "avg_I_ratio": 0.0,
+        "avg_d_sem": 3.0
+      }
+    }
+  ]
+}

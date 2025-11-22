@@ -1,0 +1,14 @@
+AUTO VALIDATION REPORT
+
+BBN_CMB_safe: PASS
+c_T_constraint: FAIL
+optical_consistent: FAIL
+alpha_M_consistent: FAIL
+ALL_PASS: FAIL
+
+LISA forecast:
+delta_theta_percent: 1829.741691291905
+max_kappa: 2.077443256873642
+delta_beta: 0.47652416132498887
+detectable: True
+confidence: medium

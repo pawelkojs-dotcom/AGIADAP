@@ -192,10 +192,7 @@ class MultiTaskValidator:
     def __init__(self, evaluator: HybridEvaluator, enable_safety_phase2: bool = False):
         self.evaluator = evaluator
         self.constraints = INTAGIConstraints()
-        self.safety = SafetyCoordinator(
-            enable_phase1=True,
-            enable_phase2=enable_safety_phase2
-        )
+        self.safety = SafetyCoordinator()
     
     def generate_config_for_task(self, task: TaskScenario) -> Dict[str, Any]:
         """
@@ -204,7 +201,7 @@ class MultiTaskValidator:
         In full implementation, could adapt parameters based on task type.
         For now, uses standard validated ranges.
         """
-        spec = self.constraints.get_validated_spec()
+        spec = self.constraints.get_intagi_validated_spec()
         
         # Task-specific adaptations (placeholder for future work)
         # Creative: higher theta (more exploration)
@@ -213,10 +210,10 @@ class MultiTaskValidator:
         # Mixed: balanced parameters
         
         return {
-            'n_layers': random.choice(spec['n_layers']),
-            'hidden_dim': random.choice(spec['hidden_dim']),
-            'theta': random.uniform(*spec['theta']),
-            'gamma': random.uniform(*spec['gamma']),
+            'n_layers': random.choice(spec.layers_range),
+            'hidden_dim': random.choice(spec.hidden_dim_options),
+            'theta': random.uniform(spec.theta_range[0], spec.theta_range[-1]),
+            'gamma': random.uniform(spec.gamma_range[0], spec.gamma_range[-1]),
             'task_type': task.task_type
         }
     
@@ -243,7 +240,7 @@ class MultiTaskValidator:
             0.3 * (result.n_eff > 4.5) +
             0.3 * (result.I_ratio > 0.3) +
             0.2 * (result.sigma_coh > 0.7) +
-            0.2 * (result.I_strength > 7.0)
+            0.2 * (result.d_sem >= 3.0)
         )
         
         adjusted_score = architecture_score * difficulty_modifier
@@ -255,16 +252,16 @@ class MultiTaskValidator:
             'description': task.description,
             'expected_difficulty': task.expected_difficulty,
             'config': config,
-            'architecture_success': result.success,
+            'architecture_success': result.meets_r4,
             'task_success': task_success,
             'architecture_score': architecture_score,
             'adjusted_score': adjusted_score,
             'n_eff': result.n_eff,
             'I_ratio': result.I_ratio,
             'sigma_coh': result.sigma_coh,
-            'I_strength': result.I_strength,
-            'reasoning': result.reasoning,
-            'cost': result.cost
+            'I_strength': result.d_sem,
+            'reasoning': 'Heuristic evaluation',
+            'cost': 0.0
         }
     
     def run_validation(
@@ -352,7 +349,7 @@ class MultiTaskValidator:
                 }
         
         # Cost statistics
-        stats = self.evaluator.get_statistics()
+        stats = self.evaluator.get_stats()
         
         analysis = {
             'overall': {

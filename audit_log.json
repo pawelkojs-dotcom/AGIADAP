@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": 0,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.22909090909090912,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.22909090909090912
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.01999999999999999
+    }
+  },
+  {
+    "timestamp": 1,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.23266666666666672,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.23266666666666672
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.023999999999999994
+    }
+  },
+  {
+    "timestamp": 2,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.2342769230769231,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.2342769230769231
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.028799999999999992
+    }
+  },
+  {
+    "timestamp": 3,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.2340114285714286,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.2340114285714286
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.03455999999999998
+    }
+  },
+  {
+    "timestamp": 6,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.22145679058823534,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.22145679058823534
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.05971968
+    }
+  },
+  {
+    "timestamp": 7,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.21278082844444446,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.21278082844444446
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.07166361599999999
+    }
+  },
+  {
+    "timestamp": 8,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.20137208185263164,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.20137208185263164
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.08599633919999994
+    }
+  },
+  {
+    "timestamp": 9,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.1868043929600001,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.1868043929600001
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.10319560703999997
+    }
+  },
+  {
+    "timestamp": 10,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.1685462239329525,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.1685462239329525
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.12383472844799992
+    }
+  },
+  {
+    "timestamp": 11,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.14594378040785463,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.14594378040785463
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.14860167413759995
+    }
+  },
+  {
+    "timestamp": 12,
+    "agent_id": "A0",
+    "type": "general",
+    "F_wew": 0.20794414862826283,
+    "F_zew": 0.11819973016531488,
+    "mode": "action_external",
+    "phase": "R2",
+    "metrics": {},
+    "rationale": "",
+    "cause": {
+      "F_wew": 0.20794414862826283,
+      "F_zew": 0.11819973016531488
+    },
+    "decision": {
+      "mode": "action_external"
+    },
+    "effect": {
+      "delta_theta": 0.10838995517440031
+    }
+  }
+]

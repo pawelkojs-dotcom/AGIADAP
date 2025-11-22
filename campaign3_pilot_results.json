@@ -1,0 +1,45 @@
+{
+  "pilot_date": "2025-11-18T19:49:32.576304",
+  "n_dialogues": 3,
+  "results": [
+    {
+      "session_id": "GP001_20251118_194928",
+      "template_id": "GP001",
+      "category": "goal_persistence",
+      "I_strength": 17.224813505435677,
+      "metrics": {
+        "I_strength": 17.224813505435677,
+        "avg_n_eff": 4.944323294936479,
+        "avg_theta": 0.5402901166629116,
+        "avg_I_ratio": 0.7846879546272486,
+        "avg_d_sem": 3.0
+      }
+    },
+    {
+      "session_id": "PB001_20251118_194930",
+      "template_id": "PB001",
+      "category": "procedure_breaking",
+      "I_strength": 17.791203219428333,
+      "metrics": {
+        "I_strength": 17.791203219428333,
+        "avg_n_eff": 4.9564888651215195,
+        "avg_theta": 0.6847608848871637,
+        "avg_I_ratio": 0.9002199852257324,
+        "avg_d_sem": 3.0
+      }
+    },
+    {
+      "session_id": "CI001_20251118_194931",
+      "template_id": "CI001",
+      "category": "context_integration",
+      "I_strength": 17.298234383640114,
+      "metrics": {
+        "I_strength": 17.298234383640114,
+        "avg_n_eff": 4.9565705199858945,
+        "avg_theta": 0.7407819699625484,
+        "avg_I_ratio": 0.5990437687175098,
+        "avg_d_sem": 3.0
+      }
+    }
+  ]
+}

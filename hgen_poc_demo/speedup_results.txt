@@ -1,0 +1,25 @@
+======================================================================
+HGEN + INTAGI SPEEDUP DEMONSTRATION RESULTS
+======================================================================
+
+UNCONSTRAINED SEARCH:
+  Trials: 50
+  Successes: 19
+  Success rate: 38.0%
+  Trials to first success: 1
+  Cost: $0.2165
+  Time: 372.70s
+
+INTAGI-GUIDED SEARCH:
+  Trials: 50
+  Successes: 49
+  Success rate: 98.0%
+  Trials to first success: 1
+  Cost: $0.4339
+  Time: 362.70s
+
+SPEEDUP METRICS:
+  Space reduction: 48.0×
+  Success improvement: 2.6×
+  Combined speedup: 124×
+  Trials speedup: 1.0×

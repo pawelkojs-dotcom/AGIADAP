@@ -1,0 +1,14 @@
+metric,value
+beta0_theory_Theta_100K [T^-2],0.0009400023209933852
+beta0_theory_target_0.8e-3 [T^-2],0.0008
+Theta_star_for_0.8e-3 [K],85.10617283950617
+mean_beta_H_measured [T^-2],0.0002946521739130435
+SNR_estimate [-],4.494085203270154
+N_eff_estimate [-],2803.357433838896
+deltaTheta/Theta (quantum limit),0.008909228787010804
+deltaS/S (Shannon),0.018886903555538567
+delta_beta/beta (stat),0.02088275564899224
+xi_T [K],6.0
+avg_relative_uncertainty_total [%],2.8390942676730035
+coherence_C [-],0.8912011436978766
+mean_enhancement_betaH_over_beta0(Theta*) [-],0.3683152173913044

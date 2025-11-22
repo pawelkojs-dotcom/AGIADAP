@@ -1,0 +1,67 @@
+# Makefile for AGI Intentionality Framework
+# =========================================
+
+.PHONY: help test quicktest standard extended compare clean install check
+
+help:
+	@echo "AGI Intentionality Framework - Makefile"
+	@echo "========================================"
+	@echo ""
+	@echo "Targets:"
+	@echo "  help       - Show this help message"
+	@echo "  check      - Verify all modules"
+	@echo "  quicktest  - Run quick test (50 steps)"
+	@echo "  test       - Run standard test (200 steps)"
+	@echo "  standard   - Run standard baseline (500 steps)"
+	@echo "  extended   - Run extended test (1000 steps)"
+	@echo "  compare    - Compare baselines"
+	@echo "  clean      - Remove output files"
+	@echo ""
+	@echo "Examples:"
+	@echo "  make quicktest    # Fast sanity check"
+	@echo "  make standard     # Full baseline run"
+	@echo "  make compare      # Compare results"
+
+check:
+	@echo "Checking module imports..."
+	@python3 -c "from agi_multi_layer import run_improved_simulation; print('  ✅ agi_multi_layer')"
+	@python3 -c "from metrics import analyze_transition; print('  ✅ metrics')"
+	@python3 -c "from llm_baseline import MockEmbeddingProvider; print('  ✅ llm_baseline')"
+	@echo "✅ All modules OK"
+
+quicktest: check
+	@echo "Running quick test (50 steps)..."
+	python3 run_pipeline.py --mode toy --n_steps 50 --name quicktest
+
+test: check
+	@echo "Running standard test (200 steps)..."
+	python3 run_pipeline.py --mode toy --n_steps 200 --name test
+
+standard: check
+	@echo "Running standard baseline (500 steps)..."
+	python3 run_pipeline.py --mode toy --n_steps 500 --name standard
+
+extended: check
+	@echo "Running extended test (1000 steps)..."
+	python3 run_pipeline.py --mode toy --n_steps 1000 --name extended
+
+compare:
+	@echo "Comparing baselines..."
+	python3 run_pipeline.py --mode compare
+
+clean:
+	@echo "Cleaning output files..."
+	rm -rf pipeline_results/*.json
+	rm -rf baseline_results/*.json
+	rm -rf __pycache__
+	@echo "✅ Cleaned"
+
+install:
+	@echo "Installing dependencies..."
+	pip install numpy scipy matplotlib scikit-learn
+	@echo "✅ Dependencies installed"
+
+# Convenience aliases
+quick: quicktest
+run: standard
+full: extended

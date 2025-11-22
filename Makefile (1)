@@ -1,0 +1,145 @@
+# ========================================
+# MAKEFILE - AGI Adaptonika Figure Pipeline
+# ========================================
+# Automates generation of FIG1-FIG4
+# Date: 2025-11-16
+# ========================================
+
+# Variables
+# ----------------------------------------
+PY := python3
+OUTDIR := figures
+SCRIPTS := multi_layer_intentionality.py scaling_study.py consolidation_multi_layer.py consolidation_single_layer.py
+
+# Targets
+# ----------------------------------------
+.PHONY: all figures test fig1 fig2 fig3 fig4 clean pack help import-existing
+
+# Default target
+all: figures
+
+# Generate all figures
+figures: fig1 fig2 fig3 fig4
+	@echo ""
+	@echo "✅ All figures generated successfully!"
+	@echo "📂 Check $(OUTDIR)/ directory"
+
+# Individual figures
+fig1:
+	@echo ">> Running multi_layer_intentionality.py to generate fig1..."
+	@mkdir -p $(OUTDIR)
+	@$(PY) multi_layer_intentionality.py
+	@if [ -f multi_layer_intentionality.png ]; then \
+		mv multi_layer_intentionality.png $(OUTDIR)/fig1_intentionality.png; \
+		echo "✔ Wrote $(OUTDIR)/fig1_intentionality.png"; \
+	else \
+		echo "❌ Failed to generate fig1"; \
+		exit 1; \
+	fi
+
+fig2:
+	@echo ">> Running scaling_study.py to generate fig2..."
+	@mkdir -p $(OUTDIR)
+	@$(PY) scaling_study.py
+	@if [ -f scaling_study.png ]; then \
+		mv scaling_study.png $(OUTDIR)/fig2_scaling.png; \
+		echo "✔ Wrote $(OUTDIR)/fig2_scaling.png"; \
+	else \
+		echo "❌ Failed to generate fig2"; \
+		exit 1; \
+	fi
+
+fig3:
+	@echo ">> Running consolidation_multi_layer.py to generate fig3..."
+	@mkdir -p $(OUTDIR)
+	@$(PY) consolidation_multi_layer.py
+	@if [ -f consolidation_multi_layer.png ]; then \
+		mv consolidation_multi_layer.png $(OUTDIR)/fig3_consolidation_multi.png; \
+		echo "✔ Wrote $(OUTDIR)/fig3_consolidation_multi.png"; \
+	else \
+		echo "❌ Failed to generate fig3"; \
+		exit 1; \
+	fi
+
+fig4:
+	@echo ">> Running consolidation_single_layer.py to generate fig4..."
+	@mkdir -p $(OUTDIR)
+	@$(PY) consolidation_single_layer.py
+	@if [ -f consolidation_single_layer.png ]; then \
+		mv consolidation_single_layer.png $(OUTDIR)/fig4_consolidation_single.png; \
+		echo "✔ Wrote $(OUTDIR)/fig4_consolidation_single.png"; \
+	else \
+		echo "❌ Failed to generate fig4"; \
+		exit 1; \
+	fi
+
+# Quick test (only fig1)
+test: fig1
+	@echo ""
+	@echo "✔ Test passed - fig1 generated successfully"
+
+# Pack figures into ZIP
+pack:
+	@mkdir -p $(OUTDIR)
+	@cd $(OUTDIR) && zip -r figures_pack.zip fig*.png
+	@echo "✔ Packed $(OUTDIR)/figures_pack.zip"
+
+# Import existing PNG files from project directory
+import-existing:
+	@echo ">> Importing existing PNG files..."
+	@mkdir -p $(OUTDIR)
+	@for file in agi_phase_diagram.png agi_transition_dynamics.png \
+	             gamma_N_comprehensive.png transition_dashboard.png \
+	             dij_simulation_results.png validation_results_1.png; do \
+		if [ -f $$file ]; then \
+			cp $$file $(OUTDIR)/; \
+			echo "✔ Imported $$file"; \
+		fi \
+	done
+	@echo "✔ Import complete"
+
+# Clean generated files
+clean:
+	@echo ">> Cleaning generated files..."
+	@rm -rf $(OUTDIR)
+	@rm -f *.png
+	@echo "✔ Clean complete"
+
+# Help
+help:
+	@echo "AGI Adaptonika Figure Pipeline"
+	@echo "==============================="
+	@echo ""
+	@echo "Targets:"
+	@echo "  make figures          Generate all 4 figures"
+	@echo "  make fig1             Generate only FIG1 (intentionality)"
+	@echo "  make fig2             Generate only FIG2 (scaling)"
+	@echo "  make fig3             Generate only FIG3 (multi-layer)"
+	@echo "  make fig4             Generate only FIG4 (baseline)"
+	@echo "  make test             Quick test (generates fig1)"
+	@echo "  make pack             Pack figures into ZIP"
+	@echo "  make import-existing  Import existing PNG files"
+	@echo "  make clean            Remove all generated files"
+	@echo "  make help             Show this help"
+	@echo ""
+	@echo "Examples:"
+	@echo "  make figures          # Generate all"
+	@echo "  make fig1 fig3        # Generate fig1 and fig3"
+	@echo "  make clean figures    # Clean and regenerate"
+	@echo "  make figures pack     # Generate and pack"
+	@echo ""
+	@echo "Custom Python:"
+	@echo "  make PY=/usr/bin/python3.11 figures"
+	@echo ""
+	@echo "Output:"
+	@echo "  All figures saved to: $(OUTDIR)/"
+	@echo ""
+
+# ========================================
+# NOTES
+# ========================================
+# 1. Requires: Python 3.9+, numpy, matplotlib, scipy
+# 2. matplotlibrc must be in current directory
+# 3. Scripts use synthetic data if lagoon.py unavailable
+# 4. All figures are 300 DPI, PNG format
+# ========================================

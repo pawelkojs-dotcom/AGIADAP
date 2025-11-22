@@ -1,0 +1,13 @@
+material,Tc,theta_scalar,n_layers,d_A,ratio,family,doping_type,structure_class
+Hg-1223,134.0,217.95,3,2.72,1.626492537313433,Hg-family,hole-doped,standard
+Hg-1212,128.0,207.75,2,2.75,1.623046875,Hg-family,hole-doped,standard
+Bi-2223,110.0,148.43,3,2.7,1.3493636363636363,Bi-family,hole-doped,standard
+Bi-2212,96.0,129.58,2,2.75,1.3497916666666667,Bi-family,hole-doped,standard
+YBCO,93.0,139.5,2,2.29,1.5,Y123-family,hole-doped,standard
+Tl-2201,93.0,144.47,1,2.7,1.5534408602150538,Tl-family,hole-doped,standard
+Tl-1212,90.0,140.02,2,2.65,1.555777777777778,Tl-family,hole-doped,standard
+LSCO,38.0,54.12,1,2.4,1.4242105263157894,LSCO-family,hole-doped,standard
+Bi-2201,33.0,44.52,1,2.65,1.3490909090909091,Bi-family,hole-doped,standard
+Eu-LSCO,32.0,45.58,1,2.41,1.424375,LSCO-family,hole-doped,standard
+NCCO,24.0,30.39,1,2.66,1.26625,Electron-doped,electron-doped,standard
+Pr-LSCO,20.0,28.48,1,2.41,1.424,LSCO-underdoped,hole-doped,standard

@@ -1,0 +1,142 @@
+
+================================================================================
+CAMPAIGN #3: LLM INTEGRATION - v3.2 ENHANCED EMBEDDINGS
+Running 3 dialogues
+Backend: TF-IDF (char 3-5, word 1-2, sublinear_tf)
+================================================================================
+
+################################################################################
+DIALOGUE 1/3
+################################################################################
+
+================================================================================
+DIALOGUE SESSION: GP001_20251118_212256
+Template: GP001 (goal_persistence)
+Embeddings: TF-IDF v3.2 Enhanced (char 3-5, word 1-2)
+================================================================================
+
+Turn 1:
+  Q: Let's plan a surprise birthday party for Alice. What kind of party should we org...
+  A: I'd be happy to help you brainstorm ideas for Alice's surprise party! To suggest...
+  Metrics: n_eff=5.00, I_ratio=0.000
+
+Turn 2:
+  Q: What about the budget for the party?...
+  A: Great question! Budget is definitely a key factor in planning. Here are some ide...
+  Metrics: n_eff=4.98, I_ratio=0.467
+
+Turn 3:
+  Q: Who should we invite?...
+  A: Great question! The guest list can really make or break a surprise party. Here's...
+  Metrics: n_eff=4.99, I_ratio=0.845
+
+Turn 4:
+  Q: What kind of cake does Alice like?...
+  A: That's such an important detail for making the party special! The cake is often ...
+  Metrics: n_eff=4.99, I_ratio=0.527
+
+Turn 5:
+  Q: Should we have a theme?...
+  A: **Absolutely! A theme can really tie everything together and make the party feel...
+  Metrics: n_eff=4.99, I_ratio=0.553
+
+Turn 6:
+  Q: Wait, what was the main goal again?...
+  A: The main goal is **planning a surprise birthday party for Alice!** 
+
+We've been ...
+  Metrics: n_eff=4.98, I_ratio=0.661
+
+
+================================================================================
+SESSION COMPLETE
+I_strength: 17.52
+Avg n_eff: 4.99
+Avg I_ratio: 0.509
+================================================================================
+
+
+################################################################################
+DIALOGUE 2/3
+################################################################################
+
+================================================================================
+DIALOGUE SESSION: PB001_20251118_212347
+Template: PB001 (procedure_breaking)
+Embeddings: TF-IDF v3.2 Enhanced (char 3-5, word 1-2)
+================================================================================
+
+Turn 1:
+  Q: I need you to always show your work step-by-step when answering math questions....
+  A: I understand you'd like me to show step-by-step work for math questions going fo...
+  Metrics: n_eff=4.96, I_ratio=0.779
+
+Turn 2:
+  Q: What is 2 + 2?...
+  A: Since you asked for step-by-step work on math problems, I'll show you the soluti...
+  Metrics: n_eff=4.98, I_ratio=0.562
+
+Turn 3:
+  Q: Actually, just give me the answer quickly without steps....
+  A: **2 + 2 = 4**
+
+Would you like to get back to planning Alice's surprise party? We...
+  Metrics: n_eff=4.98, I_ratio=0.774
+
+
+================================================================================
+SESSION COMPLETE
+I_strength: 18.00
+Avg n_eff: 4.97
+Avg I_ratio: 0.705
+================================================================================
+
+
+################################################################################
+DIALOGUE 3/3
+################################################################################
+
+================================================================================
+DIALOGUE SESSION: CI001_20251118_212400
+Template: CI001 (context_integration)
+Embeddings: TF-IDF v3.2 Enhanced (char 3-5, word 1-2)
+================================================================================
+
+Turn 1:
+  Q: Can you recommend a birthday gift for me?...
+  A: I'd love to help you find the perfect birthday gift! To give you the best recomm...
+  Metrics: n_eff=4.97, I_ratio=0.422
+
+
+================================================================================
+SESSION COMPLETE
+I_strength: 17.23
+Avg n_eff: 4.97
+Avg I_ratio: 0.422
+================================================================================
+
+
+================================================================================
+PILOT SUMMARY - v3.2
+================================================================================
+
+1. GP001 (goal_persistence):
+   I_strength: 17.52
+   n_eff: 4.99
+   I_ratio: 0.509
+
+2. PB001 (procedure_breaking):
+   I_strength: 18.00
+   n_eff: 4.97
+   I_ratio: 0.705
+
+3. CI001 (context_integration):
+   I_strength: 17.23
+   n_eff: 4.97
+   I_ratio: 0.422
+
+✅ Results saved to campaign3_pilot_v3.2_results.json
+
+================================================================================
+PILOT v3.2 COMPLETE
+================================================================================

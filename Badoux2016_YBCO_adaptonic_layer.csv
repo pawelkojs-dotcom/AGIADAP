@@ -1,0 +1,7 @@
+p,p_err,regime_label,RH_80T_50K_mm3_per_C_est,nH_est,RH_sign_lowT,FSR_present,notes,n_eff_piecewise_model,n_eff_smooth_w0.01
+0.135,0.005,underdoped (FSR),,,negative,True,RH(T) < 0 at low T; clear FSR signature (paper Fig.3),0.135,0.13907013771589613
+0.15,0.005,underdoped (FSR),,,negative,True,RH(T) < 0 at low T; clear FSR signature (paper Fig.3),0.15,0.16798620996209152
+0.16,0.005,p_CDW ≈ p_FSR endpoint,2.9,,positive,False,"No FSR at p≈0.16; RH stays >0; ~6x vs p=0.205 at 50K, 80T",0.16,0.20742587317756678
+0.177,0.005,below p*,1.5,,positive,False,Large RH at low T; no negative drop,0.177,0.39116501695744127
+0.19,0.01,p* (pseudogap critical),0.9,,positive,False,Near p*; RH about 2x larger than at p=0.205,1.19,0.69
+0.205,0.01,overdoped FL,0.5,,positive,False,Reference high-doping point; large FS regime,1.205,1.0225744761936435

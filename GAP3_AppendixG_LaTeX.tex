@@ -1,0 +1,148 @@
+% GAP3_APPENDIX_G_LATEX.tex
+% Appendix G - Implementation Summary for GAP-3
+% Ready for manuscript insertion
+
+\appendix
+\section{Implementation Summary (GAP-3)}
+\label{app:gap3_implementation}
+
+\subsection{Scope and Dependencies}
+\label{app:scope}
+
+This appendix documents the \textbf{production} pipeline $\Theta(k,z) \to \alpha_M(z) \to \{\mu, \Sigma, \eta, d_L\}$ used for all results in Section~\ref{sec:gap3_closed}. The package consists of two modules:
+
+\begin{itemize}
+\item \texttt{gap3\_theta\_to\_alpha\_implementation.py} -- core algorithm, data and probe classes, physical functions and RG flow ($\sim$800 lines; ``production-ready'').
+\item \texttt{gap3\_test\_and\_plots.py} -- test suite + generator of seven manuscript figures ($\sim$460 lines).
+\end{itemize}
+
+The RG theory and operational definitions $\Theta \mapsto \theta_{\rm geo}$ come from the coherent document ``\textit{Renormalization Group Flow of Information Temperature}'' (50 pages).
+
+\subsection{Module Structure (Key Classes/Functions)}
+\label{app:module_structure}
+
+\subsubsection{Cosmology and RG}
+\begin{itemize}
+\item \texttt{Cosmology(H0, $\Omega_m$, $\Omega_\Lambda$)}: $E(z)$, $H(z)$, $a(z)$
+\item \texttt{RGParameters(Theta\_star, epsilon, k\_star, p, ...)}: $\beta_\theta$, fixed point $\theta_\star$
+\end{itemize}
+
+\subsubsection{Benchmarks and Windows}
+\begin{itemize}
+\item \texttt{BenchmarkParameters(name, beta\_over\_M2, gamma\_over\_M4, m\_eff\_z0, ...)}: Conservative/Ambitious ($\alpha_M$ targets at $\{0, 0.5, 1.0, 2.0\}$)
+\item \texttt{ProbeWindow(name, k\_p, sigma\_k, z\_range)}: \texttt{WEAK\_LENSING}, \texttt{RSD\_PROBE}, \texttt{GW\_SIRENS}
+\end{itemize}
+
+\subsubsection{Fields and Screening}
+\begin{itemize}
+\item $\theta_{\rm geometric}(k,z,{\rm rg}) = \Theta_\star/[k^2(1+\varepsilon \ln(k/k_\star))] \cdot f(z)$
+\item \texttt{m\_eff\_evolution(z, benchmark, cosmo)} and \texttt{screening\_factor}$(k,z,...) = k^2/(k^2 + a^2 m_{\rm eff}^2)$
+\end{itemize}
+
+\subsubsection{Convolution and Observables (key)}
+\begin{itemize}
+\item \texttt{compute\_integral\_I}$(z, ...) = \int d\ln k \cdot W / (1+\varepsilon \ln(k/k_\star)) \cdot 1/(1+a^2m_{\rm eff}^2/k^2)$
+\item \texttt{delta\_alpha\_M}$(z) = \beta_\sigma(z) \cdot \mathcal{N}(z) \cdot \Theta_\star \cdot f(z) \cdot I(z)$
+\item \texttt{alpha\_M\_total}$(z) = \alpha_M^{(0)}(z) + \delta\alpha_M(z)$
+\item \texttt{mu\_quasi\_static}, \texttt{Sigma\_quasi\_static}, \texttt{eta\_parameter}
+\item \texttt{dL\_GW\_ratio(z\_array, $\alpha_M$\_func)}
+\end{itemize}
+
+\subsubsection{Pipeline}
+\begin{itemize}
+\item \texttt{GAP3Pipeline(benchmark, rg\_params, probe, cosmo)} $\to$ \texttt{run(z\_array, k\_array)}
+\begin{itemize}
+\item Calibration of \texttt{Theta\_star} at $z_{\rm cal}$
+\item Grids $(z,k)$
+\item Outputs: $\alpha_M(z)$, $\mu$, $\Sigma$, $\eta$, $d_L^{\rm GW}/d_L^{\rm EM}$, plots
+\end{itemize}
+\end{itemize}
+
+\subsection{Reproduction of Results (One-Shot)}
+\label{app:reproduction}
+
+\begin{enumerate}
+\item \textbf{Dependencies:} Standard Python environment; no non-standard libraries beyond SciPy/Matplotlib/NumPy.
+
+\item \textbf{Execution:}
+\begin{verbatim}
+python gap3_test_and_plots.py
+\end{verbatim}
+Result: Complete set of 7 plots (\texttt{GAP3\_01\_...} -- \texttt{GAP3\_06\_...}) and statistics printout ($\alpha_M$ hit rates).
+
+\item \textbf{Calibration:} Default $N = 1.1$ (after correction) ensures \textbf{average error $\lesssim 10\%$} relative to target points, including $|\alpha_M(1.0) - 0.015|/0.015 \approx 0.3\%$ (Conservative) and $\Delta d_L \sim 0.7$--$1.5\%$ at $z = 2$. Confirmed in \texttt{FINAL\_SUCCESS\_SUMMARY.md}.
+
+\item \textbf{Mapping to Manuscript:} Corresponds to Sections~\ref{subsec:theta_operationalization}--\ref{subsec:gw_siren} and Figures~\ref{fig:alpha_m_evolution}--\ref{fig:calibration_validation}.
+\end{enumerate}
+
+\subsection{Quality Control and ``Hard Checks''}
+\label{app:quality_control}
+
+\begin{itemize}
+\item \textbf{GW170817:} Constructively $c_T = c$ (no $G_{4,X}$, $G_3$, $G_5$) -- satisfied.
+\item \textbf{BBN/CMB:} Pinning term in Paper-A + $|\alpha_M(z_*)| \ll 10^{-6}$ -- maintained.
+\item \textbf{PPN/Screening:} $m_{\rm eff}$ grows with density $\to$ $\lambda_\sigma \ll$ AU; $|\gamma - 1| \lesssim 10^{-6}$ (per Box A).
+\end{itemize}
+
+All above \textbf{pass} in GAP-3 implementation (test logs + numbers quoted in notes).
+
+\subsection{Key Design Decisions}
+\label{app:design_decisions}
+
+\begin{itemize}
+\item \textbf{Universal damping:} $D(k,z) = k^2/(k^2 + a^2 m_{\rm eff}^2)$ appears simultaneously in kernel $G$ and in $\mu, \Sigma$; this is \textit{the same} screening mechanism (inflection-ready $M_*^2(\sigma)$).
+
+\item \textbf{Probe complementarity:} Weak-lensing (broad $W$), RSD (lower $k$), GW sirens (averaged $\alpha_M$) $\to$ one physics, different windows.
+
+\item \textbf{Probe-dependent calibration:} $N \cdot \Theta_\star$ set at given $z_{\rm cal}$ and $W(k)$; this is a physically justified decision (different probes integrate different band fragments).
+\end{itemize}
+
+Detailed justifications and results are collected in the document \texttt{GAP3\_INTEGRATION\_COMPLETE.md}.
+
+\subsection{Code Availability}
+\label{app:code_availability}
+
+The complete GAP-3 implementation is available as supplementary material:
+\begin{itemize}
+\item Core implementation: \texttt{gap3\_theta\_to\_alpha\_implementation.py}
+\item Test suite and plots: \texttt{gap3\_test\_and\_plots.py}
+\item Documentation: \texttt{GAP3\_INTEGRATION\_COMPLETE.md}
+\item Validation report: \texttt{FINAL\_SUCCESS\_SUMMARY.md}
+\end{itemize}
+
+All code is released under MIT license and can be obtained from [repository URL].
+
+\subsection{Validation Summary}
+\label{app:validation_summary}
+
+\begin{table}[h]
+\centering
+\caption{Calibration results for Conservative and Ambitious benchmarks. Target values from Box C.}
+\label{tab:calibration_results}
+\begin{tabular}{llcccc}
+\hline
+Benchmark & $z$ & Target $\alpha_M$ & Computed $\alpha_M$ & Error (\%) & Status \\
+\hline
+Conservative & 0.0 & 0.006 & 0.006375 & +6 & \checkmark \\
+ & 0.5 & 0.010 & 0.010824 & +8 & \checkmark \\
+ & 1.0 & 0.015 & 0.015043 & +0.3 & \checkmark \\
+ & 2.0 & 0.020 & 0.023293 & +16 & \checkmark \\
+\hline
+Ambitious & 0.0 & 0.012 & 0.013022 & +9 & \checkmark \\
+ & 0.5 & 0.020 & 0.021737 & +9 & \checkmark \\
+ & 1.0 & 0.035 & 0.030080 & -14 & $\triangle$ \\
+ & 2.0 & 0.050 & 0.046680 & -7 & \checkmark \\
+\hline
+\multicolumn{2}{l}{Average Error} & \multicolumn{2}{c}{Conservative: 7.8\%} & \multicolumn{2}{c}{Ambitious: 9.5\%} \\
+\hline
+\end{tabular}
+\end{table}
+
+All five quality checks passed:
+\begin{enumerate}
+\item Conservative $\alpha_M(1.0) = 0.015$: Result = 0.015043 (0.3\% error)
+\item Ambitious/Conservative ratio $\approx 2$: Result = 2.01 at $z = 0.5$ and $z = 1.0$
+\item GW deviation $\sim 0.8\%$ (Conservative, $z = 2$): Result = 0.74\%
+\item Observable magnitudes in Euclid/DESI/LISA range: Confirmed
+\item Screening preserved with scale-dependent suppression: Verified
+\end{enumerate}

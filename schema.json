@@ -1,0 +1,351 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Adaptonic Sigma Storage Schema",
+  "description": "Standard format for storing shared adaptonic memory across ChatGPT, Claude, and human operator",
+  "version": "1.0.0",
+  
+  "definitions": {
+    
+    "memory_semantic": {
+      "type": "object",
+      "description": "Long-term semantic memory - validated facts and principles",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "content", "status", "created", "project"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^MEM_[0-9]{4}-[0-9]{2}-[0-9]{2}_[a-zA-Z0-9_]+$",
+                "description": "Unique memory ID",
+                "example": "MEM_2025-11-21_AdaptiveCoupling"
+              },
+              "content": {
+                "type": "string",
+                "maxLength": 500,
+                "description": "The validated fact or principle"
+              },
+              "status": {
+                "type": "string",
+                "enum": ["provisional", "confirmed", "deprecated"],
+                "description": "Validation status"
+              },
+              "evidence": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "List of supporting experiments, sessions, or documents"
+              },
+              "created": {
+                "type": "string",
+                "format": "date",
+                "description": "Date entry was created"
+              },
+              "updated": {
+                "type": "string",
+                "format": "date",
+                "description": "Date entry was last updated"
+              },
+              "project": {
+                "type": "string",
+                "enum": ["AGI_INT", "HGEN", "OD_Cosmology", "HTSC", "General"],
+                "description": "Which project this memory belongs to"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Confidence level (0-1)"
+              },
+              "tags": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Searchable tags"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "memory_episodic": {
+      "type": "object",
+      "description": "Short-term episodic memory - recent sessions and rounds",
+      "properties": {
+        "sessions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["session_id", "date", "query", "workflow"],
+            "properties": {
+              "session_id": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}_[a-zA-Z0-9_]+$",
+                "example": "2025-11-21_OD_CR3_VoidEdges"
+              },
+              "date": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "query": {
+                "type": "string",
+                "description": "The original question/task"
+              },
+              "workflow": {
+                "type": "string",
+                "enum": ["R1_R2_R3", "single_agent", "experiment", "other"]
+              },
+              "rounds": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["round_id", "agent", "summary"],
+                  "properties": {
+                    "round_id": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 3
+                    },
+                    "agent": {
+                      "type": "string",
+                      "enum": ["ChatGPT", "Claude", "Human"]
+                    },
+                    "summary": {
+                      "type": "string",
+                      "maxLength": 300,
+                      "description": "Brief summary of this round's output"
+                    },
+                    "theta_hat": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 0.3,
+                      "description": "Estimated exploration temperature"
+                    },
+                    "certainty": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 5
+                    },
+                    "alignment_with_sigma": {
+                      "type": "string",
+                      "enum": ["low", "medium", "high"]
+                    }
+                  }
+                }
+              },
+              "outcome": {
+                "type": "string",
+                "description": "Final result/decision from this session"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "ontology": {
+      "type": "object",
+      "description": "Canonical definitions and terminology",
+      "properties": {
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["term", "definition", "domain"],
+            "properties": {
+              "term": {
+                "type": "string",
+                "description": "The canonical term"
+              },
+              "definition": {
+                "type": "string",
+                "description": "Precise definition"
+              },
+              "symbol": {
+                "type": "string",
+                "description": "Mathematical symbol if applicable"
+              },
+              "domain": {
+                "type": "string",
+                "enum": ["AGI", "HGEN", "Cosmology", "HTSC", "Universal"],
+                "description": "Which domain this concept belongs to"
+              },
+              "related_terms": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Related concepts"
+              },
+              "deprecated": {
+                "type": "boolean",
+                "default": false,
+                "description": "Is this term no longer used?"
+              },
+              "replaced_by": {
+                "type": "string",
+                "description": "If deprecated, what replaced it?"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "sigma_state": {
+      "type": "object",
+      "description": "Current coherence state per project",
+      "properties": {
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "coherence_score"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "enum": ["AGI_INT", "HGEN", "OD_cosmology", "HTSC", "General"]
+              },
+              "label": {
+                "type": "string",
+                "description": "Human-readable project name"
+              },
+              "coherence_score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Current σ coherence (0-1)"
+              },
+              "open_questions": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Unresolved questions"
+              },
+              "recent_updates": {
+                "type": "array",
+                "items": {"type": "string"},
+                "description": "Recent progress"
+              },
+              "last_updated": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "theta_state": {
+      "type": "object",
+      "description": "Exploration temperature state per agent",
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "typical_theta_hat"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": ["ChatGPT", "Claude"]
+              },
+              "typical_theta_hat": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 0.3,
+                "description": "Typical exploration parameter"
+              },
+              "last_runs": {
+                "type": "array",
+                "maxItems": 10,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "session_id": {"type": "string"},
+                    "round_id": {"type": "integer"},
+                    "theta_hat": {"type": "number"},
+                    "certainty": {"type": "integer"},
+                    "alignment_with_sigma": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    
+    "agents_profiles": {
+      "type": "object",
+      "description": "Agent characteristics and roles",
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "role"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "enum": ["ChatGPT", "Claude", "Human"]
+              },
+              "role": {
+                "type": "string",
+                "description": "Primary role in system"
+              },
+              "strengths": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "weaknesses": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "theta_typical": {
+                "type": "number"
+              },
+              "preferred_tasks": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  },
+  
+  "type": "object",
+  "required": ["version", "last_updated", "memory_semantic", "sigma_state"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version",
+      "example": "1.0.0"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Last modification timestamp"
+    },
+    "memory_semantic": {
+      "$ref": "#/definitions/memory_semantic"
+    },
+    "memory_episodic": {
+      "$ref": "#/definitions/memory_episodic"
+    },
+    "ontology": {
+      "$ref": "#/definitions/ontology"
+    },
+    "sigma_state": {
+      "$ref": "#/definitions/sigma_state"
+    },
+    "theta_state": {
+      "$ref": "#/definitions/theta_state"
+    },
+    "agents_profiles": {
+      "$ref": "#/definitions/agents_profiles"
+    }
+  }
+}

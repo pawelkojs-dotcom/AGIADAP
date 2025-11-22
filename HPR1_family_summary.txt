@@ -1,0 +1,12 @@
+HPR1 per-family stats (INCLUDED):
+- Bi-2201: N=1, Mean=1.349, CV=nan%, R_family=1.038
+- Bi-2212: N=1, Mean=1.350, CV=nan%, R_family=1.038
+- Bi-2223: N=1, Mean=1.349, CV=nan%, R_family=1.038
+- Hg-1201: N=1, Mean=1.024, CV=nan%, R_family=0.787
+- Hg-1212: N=1, Mean=1.623, CV=nan%, R_family=1.248
+- Hg-1223: N=1, Mean=1.626, CV=nan%, R_family=1.251
+- T214: N=2, Mean=1.424, CV=0.01%, R_family=1.096
+- Tl-1212: N=1, Mean=1.556, CV=nan%, R_family=1.197
+- Tl-2201: N=1, Mean=1.553, CV=nan%, R_family=1.195
+- Tl-2212: N=1, Mean=0.955, CV=nan%, R_family=0.735
+- Y123: N=1, Mean=1.500, CV=nan%, R_family=1.154

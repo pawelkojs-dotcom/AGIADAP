@@ -1,0 +1,339 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-11-21T14:30:00Z",
+  
+  "memory_semantic": {
+    "entries": [
+      {
+        "id": "MEM_2025-11-15_AdaptiveCoupling",
+        "content": "Multi-layer architectures require adaptive coupling λ_eff(σ) for R4 stability. Fixed λ₀ causes destabilization in high-coherence regimes.",
+        "status": "confirmed",
+        "evidence": [
+          "EXP_2025-11-15_v3.1_AdaptiveCoupling",
+          "Campaign_3_Real_LLM_Integration",
+          "TOY_MODEL_FINAL_v2-v3.1_COMPLETE.md"
+        ],
+        "created": "2025-11-15",
+        "updated": "2025-11-21",
+        "project": "AGI_INT",
+        "confidence": 0.95,
+        "tags": ["adaptive_coupling", "R4", "stability", "multi_layer"]
+      },
+      {
+        "id": "MEM_2025-11-10_FiveLayersRequired",
+        "content": "Intentionality requires n_eff > 4.5, which mathematically necessitates at least 5 physical layers. Four-layer systems have n_eff_max = 4.0 ceiling.",
+        "status": "confirmed",
+        "evidence": [
+          "MATHEMATICAL_FORMALISM.md (Section 3.2)",
+          "Campaign_2_Multi_Layer_Validation",
+          "100% success rate in 5-layer vs 0% in 1-layer"
+        ],
+        "created": "2025-11-10",
+        "updated": "2025-11-15",
+        "project": "AGI_INT",
+        "confidence": 0.98,
+        "tags": ["architecture", "n_eff", "intentionality", "layer_count"]
+      },
+      {
+        "id": "MEM_2025-11-16_GammaMediumViscosity",
+        "content": "γ is the third fundamental field (alongside σ and Θ). Optimal γ_opt depends on system size N and desired phase: γ_opt(R4) ≠ γ_opt(R2/R3).",
+        "status": "confirmed",
+        "evidence": [
+          "MEDIUM_THEORY_COMPREHENSIVE_REPORT.md",
+          "EXP_2025-11-16_GammaSweep",
+          "GAMMA_SYNTHESIS_Theory_Experiment.md"
+        ],
+        "created": "2025-11-16",
+        "updated": "2025-11-16",
+        "project": "General",
+        "confidence": 0.92,
+        "tags": ["gamma", "medium_viscosity", "fundamental_field", "scaling"]
+      },
+      {
+        "id": "MEM_2025-11-20_MultiSessionPersistence",
+        "content": "True intentionality requires goal persistence across separate sessions (σ-storage), not just within-session context management. This distinguishes intentional from procedural-episodic behavior.",
+        "status": "provisional",
+        "evidence": [
+          "Campaign_4_Multi_Session_Persistence",
+          "36% average goal decay across 13 scenarios"
+        ],
+        "created": "2025-11-20",
+        "updated": "2025-11-20",
+        "project": "AGI_INT",
+        "confidence": 0.85,
+        "tags": ["intentionality", "persistence", "sigma_storage", "multi_session"]
+      }
+    ]
+  },
+  
+  "memory_episodic": {
+    "sessions": [
+      {
+        "session_id": "2025-11-21_AGI_INT_AxiomVI_Validation",
+        "date": "2025-11-21T10:00:00Z",
+        "query": "Can Axiom VI (adaptive coupling) fully resolve the v2.0 stability problem?",
+        "workflow": "R1_R2_R3",
+        "rounds": [
+          {
+            "round_id": 1,
+            "agent": "ChatGPT",
+            "summary": "Formalized Axiom VI mathematically: λ_eff(σ) = λ₀ · (1 + α·σ²). Derived stability conditions. Predicted elimination of high-σ destabilization.",
+            "theta_hat": 0.08,
+            "certainty": 4,
+            "alignment_with_sigma": "high"
+          },
+          {
+            "round_id": 2,
+            "agent": "Claude",
+            "summary": "Ran toy model v3.1 with adaptive coupling. Confirmed n_eff recovery (4.67→4.98), R4 success 100%, zero destabilization events. Validated prediction.",
+            "theta_hat": 0.12,
+            "certainty": 5,
+            "alignment_with_sigma": "high"
+          },
+          {
+            "round_id": 3,
+            "agent": "ChatGPT",
+            "summary": "Synthesis: Axiom VI is empirically validated. Updates ADAPTIVE_COUPLING_AXIOM.md with confirmed status. Proposes integration into KERNEL_AGI.md.",
+            "theta_hat": 0.06,
+            "certainty": 5,
+            "alignment_with_sigma": "high"
+          }
+        ],
+        "outcome": "Axiom VI validated. Status upgraded to 'confirmed'. Ready for canonical integration."
+      }
+    ]
+  },
+  
+  "ontology": {
+    "concepts": [
+      {
+        "term": "σ (sigma)",
+        "definition": "Coherence field - measures alignment/consensus of agent beliefs or system states",
+        "symbol": "σ(x,t)",
+        "domain": "Universal",
+        "related_terms": ["coherence", "consensus", "alignment"],
+        "deprecated": false
+      },
+      {
+        "term": "Θ (theta)",
+        "definition": "Information temperature - controls exploration intensity and cognitive diversity",
+        "symbol": "Θ(x,t)",
+        "domain": "Universal",
+        "related_terms": ["exploration", "temperature", "diversity"],
+        "deprecated": false
+      },
+      {
+        "term": "γ (gamma)",
+        "definition": "Medium viscosity - temporal metric controlling relaxation timescales and system inertia",
+        "symbol": "γ(x,t)",
+        "domain": "Universal",
+        "related_terms": ["viscosity", "damping", "inertia", "timescale"],
+        "deprecated": false
+      },
+      {
+        "term": "n_eff",
+        "definition": "Effective number of layers - measure of architectural depth accounting for coupling strength",
+        "symbol": "n_eff",
+        "domain": "AGI",
+        "related_terms": ["layers", "depth", "architecture"],
+        "deprecated": false
+      },
+      {
+        "term": "I_ratio",
+        "definition": "Indirect information ratio - fraction of information passing through intermediate layers",
+        "symbol": "I_ratio",
+        "domain": "AGI",
+        "related_terms": ["information_flow", "indirection", "architecture"],
+        "deprecated": false
+      },
+      {
+        "term": "R4",
+        "definition": "Intentional phase - characterized by n_eff > 4.5, I_ratio > 0.3, d_sem ≥ 3, σ_coh > 0.7",
+        "symbol": "R4",
+        "domain": "AGI",
+        "related_terms": ["intentionality", "phase_transition", "emergence"],
+        "deprecated": false
+      },
+      {
+        "term": "kompaktacja",
+        "definition": "DEPRECATED - use 'krystalizacja' (crystallization) instead",
+        "symbol": null,
+        "domain": "Universal",
+        "related_terms": ["krystalizacja"],
+        "deprecated": true,
+        "replaced_by": "krystalizacja"
+      },
+      {
+        "term": "krystalizacja",
+        "definition": "Crystallization - phase transition from disordered to ordered state, σ increases, entropy decreases",
+        "symbol": "σ↑, S↓",
+        "domain": "Universal",
+        "related_terms": ["phase_transition", "ordering", "coherence"],
+        "deprecated": false
+      }
+    ]
+  },
+  
+  "sigma_state": {
+    "projects": [
+      {
+        "id": "AGI_INT",
+        "label": "AGI Intentionality (Cognitive Lagoon)",
+        "coherence_score": 0.87,
+        "open_questions": [
+          "How does adaptive coupling scale to N>20 agents?",
+          "What is the minimum γ for R4 stability?",
+          "Can we predict transition times t_R3→R4?"
+        ],
+        "recent_updates": [
+          "Axiom VI (adaptive coupling) validated - 2025-11-21",
+          "Campaign #4 multi-session persistence completed - 2025-11-20",
+          "5-layer necessity mathematically proven - 2025-11-10"
+        ],
+        "last_updated": "2025-11-21"
+      },
+      {
+        "id": "HGEN",
+        "label": "Hadronic Gauge Emergence (HGEN-INTAGA)",
+        "coherence_score": 0.72,
+        "open_questions": [
+          "Precise mapping between σ_AGI and σ_HGEN",
+          "How do P2/P4 proofs integrate with intentionality?",
+          "INTAGA parameters for hadronic scales"
+        ],
+        "recent_updates": [
+          "P2/P4 proof framework established",
+          "Integration points with AGI INT identified"
+        ],
+        "last_updated": "2025-11-18"
+      },
+      {
+        "id": "OD_cosmology",
+        "label": "Ontogenesis of Dimensions - Cosmology",
+        "coherence_score": 0.68,
+        "open_questions": [
+          "Exact CR3 amplitude for Euclid voids",
+          "Self-consistency loop σ ↔ d_s ↔ M*²",
+          "BBN constraints on early σ evolution"
+        ],
+        "recent_updates": [
+          "C(s) coherence index defined",
+          "ln M*²(s) inflection-ready formulation"
+        ],
+        "last_updated": "2025-11-15"
+      }
+    ]
+  },
+  
+  "theta_state": {
+    "agents": [
+      {
+        "name": "ChatGPT",
+        "typical_theta_hat": 0.09,
+        "last_runs": [
+          {
+            "session_id": "2025-11-21_AGI_INT_AxiomVI_Validation",
+            "round_id": 1,
+            "theta_hat": 0.08,
+            "certainty": 4,
+            "alignment_with_sigma": "high"
+          },
+          {
+            "session_id": "2025-11-21_AGI_INT_AxiomVI_Validation",
+            "round_id": 3,
+            "theta_hat": 0.06,
+            "certainty": 5,
+            "alignment_with_sigma": "high"
+          }
+        ]
+      },
+      {
+        "name": "Claude",
+        "typical_theta_hat": 0.13,
+        "last_runs": [
+          {
+            "session_id": "2025-11-21_AGI_INT_AxiomVI_Validation",
+            "round_id": 2,
+            "theta_hat": 0.12,
+            "certainty": 5,
+            "alignment_with_sigma": "high"
+          }
+        ]
+      }
+    ]
+  },
+  
+  "agents_profiles": {
+    "agents": [
+      {
+        "id": "ChatGPT",
+        "role": "structural_synthesizer",
+        "strengths": [
+          "Formalizing mathematical structures",
+          "Maintaining canonical consistency",
+          "Synthesizing multiple perspectives",
+          "Structuring documentation"
+        ],
+        "weaknesses": [
+          "Sometimes overly conservative",
+          "May resist radical conceptual leaps",
+          "Can overemphasize formalism vs intuition"
+        ],
+        "theta_typical": 0.09,
+        "preferred_tasks": [
+          "Theory formalization",
+          "Canon integration",
+          "Documentation synthesis",
+          "R1 analysis",
+          "R3 synthesis"
+        ]
+      },
+      {
+        "id": "Claude",
+        "role": "exploratory_critic",
+        "strengths": [
+          "Finding gaps and edge cases",
+          "Experimental validation",
+          "Non-standard connections",
+          "Meta-commentary"
+        ],
+        "weaknesses": [
+          "May overexplore and dilute focus",
+          "Tendency toward higher Θ",
+          "Can introduce unnecessary complexity"
+        ],
+        "theta_typical": 0.13,
+        "preferred_tasks": [
+          "Empirical testing",
+          "Critical review",
+          "Experiment design",
+          "R2 critique",
+          "Campaign execution"
+        ]
+      },
+      {
+        "id": "Human",
+        "role": "meta_orchestrator",
+        "strengths": [
+          "Strategic direction",
+          "Intuitive leaps",
+          "Cross-domain integration",
+          "Final decision-making"
+        ],
+        "weaknesses": [
+          "Limited computational bandwidth",
+          "Time constraints",
+          "Cognitive load management"
+        ],
+        "theta_typical": null,
+        "preferred_tasks": [
+          "Strategic planning",
+          "Final decisions",
+          "Intuitive guidance",
+          "R0 task definition",
+          "R4 validation"
+        ]
+      }
+    ]
+  }
+}

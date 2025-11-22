@@ -1,0 +1,3 @@
+# Mirror Prompt Header
+
+Placeholder.

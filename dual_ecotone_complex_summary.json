@@ -1,0 +1,98 @@
+{
+  "fear_fear": {
+    "performance": {
+      "net_performance_mean": -10.270139019904134,
+      "net_performance_std": 1.6948299740094133,
+      "success_rate_mean": 0.1705,
+      "success_rate_std": 0.04488596662655267
+    },
+    "ecotones": {
+      "I_internal_mean": 0.4463928889889675,
+      "I_external_mean": 0.37851005150107603,
+      "I_product_mean": 0.17022818924897817
+    },
+    "event_handling": {
+      "crisis_success_mean": 0.9635787007110537,
+      "opportunity_success_mean": 0.056784465534465534
+    },
+    "config": {
+      "theta_low": 0.3,
+      "theta_high": 0.5,
+      "gamma_low": 2.0,
+      "gamma_high": 1.5,
+      "sigma_ratio": 1.5
+    }
+  },
+  "bold_bold": {
+    "performance": {
+      "net_performance_mean": -16.453117514373663,
+      "net_performance_std": 4.721547685187947,
+      "success_rate_mean": 0.286,
+      "success_rate_std": 0.085871997764114
+    },
+    "ecotones": {
+      "I_internal_mean": 0.45880078409632274,
+      "I_external_mean": 0.3898411167671344,
+      "I_product_mean": 0.17651791176204817
+    },
+    "event_handling": {
+      "crisis_success_mean": 0.6994816879027406,
+      "opportunity_success_mean": 0.3738875013875014
+    },
+    "config": {
+      "theta_low": 1.5,
+      "theta_high": 2.0,
+      "gamma_low": 0.5,
+      "gamma_high": 0.3,
+      "sigma_ratio": 0.7
+    }
+  },
+  "fear_bold": {
+    "performance": {
+      "net_performance_mean": -16.01387830407156,
+      "net_performance_std": 4.93180847648165,
+      "success_rate_mean": 0.26249999999999996,
+      "success_rate_std": 0.08287792227125389
+    },
+    "ecotones": {
+      "I_internal_mean": 0.4334140226501738,
+      "I_external_mean": 0.39168101664647154,
+      "I_product_mean": 0.16836364230654807
+    },
+    "event_handling": {
+      "crisis_success_mean": 0.7733398178618767,
+      "opportunity_success_mean": 0.2027777777777778
+    },
+    "config": {
+      "theta_low": 0.5,
+      "theta_high": 1.5,
+      "gamma_low": 1.5,
+      "gamma_high": 0.5,
+      "sigma_ratio": 1.2
+    }
+  },
+  "bold_fear": {
+    "performance": {
+      "net_performance_mean": -10.305764711380917,
+      "net_performance_std": 2.053371443203996,
+      "success_rate_mean": 0.184,
+      "success_rate_std": 0.041880783182743846
+    },
+    "ecotones": {
+      "I_internal_mean": 0.4307053100062858,
+      "I_external_mean": 0.3779178871262616,
+      "I_product_mean": 0.1609720680956095
+    },
+    "event_handling": {
+      "crisis_success_mean": 0.9660285139696905,
+      "opportunity_success_mean": 0.03600301659125189
+    },
+    "config": {
+      "theta_low": 1.5,
+      "theta_high": 0.5,
+      "gamma_low": 0.5,
+      "gamma_high": 1.5,
+      "sigma_ratio": 0.8
+    }
+  }
+}

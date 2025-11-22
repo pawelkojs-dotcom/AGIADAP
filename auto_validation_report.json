@@ -1,0 +1,20 @@
+{
+  "validation_checks": {
+    "BBN_CMB_safe": true,
+    "c_T_constraint": false,
+    "optical_consistent": false,
+    "alpha_M_consistent": false,
+    "ALL_PASS": false
+  },
+  "lisa_forecast": {
+    "delta_theta_percent": 1829.741691291905,
+    "max_kappa": 2.077443256873642,
+    "delta_beta": 0.47652416132498887,
+    "detectable": "True",
+    "confidence": "medium"
+  },
+  "parameters": {
+    "omega_c_mHz": 3.0,
+    "p": 3.0
+  }
+}

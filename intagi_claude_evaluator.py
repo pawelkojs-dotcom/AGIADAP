@@ -120,14 +120,14 @@ class INTAGIClaudeEvaluator:
             self.stats.total_cost += cost
             
             if self.verbose:
-                print(f"  Evaluated {config.id}: {metrics} (cost: ${cost:.4f})")
+                print(f"  Evaluated {config.get('id', 'unknown')}: {metrics} (cost: ${cost:.4f})")
             
             return metrics
             
         except Exception as e:
             if self.verbose:
                 print(f"  ⚠️  API call failed: {e}")
-                print(f"  Falling back to heuristic for {config.id}")
+                print(f"  Falling back to heuristic for {config.get('id', 'unknown')}")
             
             # Fallback to heuristic
             return self._heuristic_evaluation(config)
@@ -139,13 +139,13 @@ class INTAGIClaudeEvaluator:
 I need you to evaluate the following architecture configuration and predict its intentionality metrics based on empirically-validated INTAGI theory:
 
 CONFIGURATION:
-- Architecture: {config.model_type}
-- Number of layers: {config.n_layers}
-- Hidden dimension: {config.hidden_dim}
-- Information temperature (Θ): {config.theta}
-- Cognitive viscosity (γ): {config.gamma}
-- Base coupling (λ₀): {config.lambda_0}
-- Adaptation steps: {config.adaptation_steps}
+- Architecture: {config['model_type']}
+- Number of layers: {config['n_layers']}
+- Hidden dimension: {config['hidden_dim']}
+- Information temperature (Θ): {config['theta']}
+- Cognitive viscosity (γ): {config['gamma']}
+- Base coupling (λ₀): {config.get('lambda_coupling', 0.08)}
+- Adaptation steps: {config.get('adaptation_steps', 100)}
 
 EMPIRICAL VALIDATION DATA (from Campaigns #3-4):
 - Campaign #3 (Real LLM): 5 layers achieved n_eff=4.98, I_ratio=0.35
@@ -205,7 +205,8 @@ Base your prediction on:
                 n_eff=metrics_dict.get('neff', 0.0),
                 I_ratio=metrics_dict.get('iratio', 0.0),
                 d_sem=metrics_dict.get('dsem', 0.0),
-                sigma_coh=metrics_dict.get('sigmacoh', 0.0)
+                sigma_coh=metrics_dict.get('sigmacoh', 0.0),
+                meets_r4=False
             )
             
         except Exception as e:
@@ -226,23 +227,24 @@ Base your prediction on:
         - γ affects stability
         """
         # Based on Campaign #3: <5 layers always fails
-        if config.n_layers < 5:
+        if config['n_layers'] < 5:
             return PerformanceMetrics(
-                n_eff=min(config.n_layers * 0.8, 4.0),  # Cannot reach 4.5
-                I_ratio=0.15,  # Below threshold
-                d_sem=2.5,  # Below threshold
-                sigma_coh=0.6  # Below threshold
+                n_eff=min(config['n_layers'] * 0.8, 4.0),
+                I_ratio=0.15,
+                d_sem=2.5,
+                sigma_coh=0.6,
+                meets_r4=False
             )
         
         # For ≥5 layers, use empirical scaling
         # Campaign #3: 5 layers → n_eff=4.98
-        base_n_eff = 4.98 if config.n_layers == 5 else min(5.0 + (config.n_layers - 5) * 0.2, 6.0)
+        base_n_eff = 4.98 if config['n_layers'] == 5 else min(5.0 + (config['n_layers'] - 5) * 0.2, 6.0)
         
         # Theta affects exploration (optimal ~0.12)
-        theta_factor = 1.0 - abs(config.theta - 0.12) / 0.12 * 0.2
+        theta_factor = 1.0 - abs(config['theta'] - 0.12) / 0.12 * 0.2
         
         # Gamma affects stability (optimal ~0.10)
-        gamma_factor = 1.0 - abs(config.gamma - 0.10) / 0.10 * 0.15
+        gamma_factor = 1.0 - abs(config['gamma'] - 0.10) / 0.10 * 0.15
         
         # Combined effects
         n_eff = base_n_eff * theta_factor * gamma_factor
@@ -254,8 +256,9 @@ Base your prediction on:
             n_eff=n_eff,
             I_ratio=I_ratio,
             d_sem=d_sem,
-            sigma_coh=sigma_coh
-        )
+            sigma_coh=sigma_coh,
+            meets_r4=(n_eff > 4.5 and I_ratio > 0.3 and d_sem >= 3 and sigma_coh > 0.7)
+            )
     
     def _estimate_tokens(self, text: str) -> int:
         """Rough token estimation (1 token ≈ 4 chars)"""

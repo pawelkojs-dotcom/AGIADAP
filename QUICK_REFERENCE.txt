@@ -1,0 +1,156 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                GAMMA THEORY PACKAGE - QUICK REFERENCE CARD                 ║
+║                          GitHub Upload Guide                               ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📦 PACKAGE LOCATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/mnt/user-data/outputs/GAMMA_PACKAGE_GITHUB/
+
+🚀 QUICK START (3 STEPS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: Copy package to your computer
+   └─> Save to: C:\GitHub\adaptonika-gamma-theory
+
+STEP 2: Create GitHub repository
+   └─> Name: adaptonika-gamma-theory
+   └─> Description: Gamma/Medium Theory for Adaptonic Systems
+   └─> ❌ DO NOT initialize with README/LICENSE
+
+STEP 3: Push to GitHub
+   └─> Run: powershell -ExecutionPolicy Bypass -File GITHUB_UPLOAD_INSTRUCTIONS.ps1
+   └─> Or use commands below ↓
+
+💻 MANUAL GIT COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+cd C:\GitHub\adaptonika-gamma-theory
+
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit: Gamma Theory v1.0.0"
+git remote add origin https://github.com/YOUR_USERNAME/adaptonika-gamma-theory.git
+git push -u origin main
+
+📁 PACKAGE STRUCTURE (28 files, 13 folders)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/
+├── README.md                    ← Main entry point
+├── docs/
+│   ├── theory/                  ← 5 theory documents (129 pages total)
+│   └── guides/                  ← 3 user guides
+├── code/
+│   └── cognitive_lagoon/        ← Python implementation
+├── figures/                     ← Visualizations
+└── logs/                        ← Experiment logs
+
+📚 KEY FILES TO CHECK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+00_INSTRUKCJA_GITHUB.md          ← Full instructions (POLISH)
+VERIFICATION_REPORT.md           ← Package verification
+docs/INDEX.md                    ← Complete navigation
+docs/theory/MASTER_SYNTHESIS.md  ← Complete theory (45 pages)
+docs/theory/APPLICATIONS.md      ← Use cases (30 pages)
+
+🎯 VERIFICATION CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After pushing to GitHub, check:
+   ✓ README.md displays as main page
+   ✓ All folders visible (docs, code, figures, logs)
+   ✓ Markdown files render correctly
+   ✓ Images display
+   ✓ Code has syntax highlighting
+   ✓ LICENSE shows correctly
+
+🔧 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Permission denied
+Fix:     Use Personal Access Token instead of password
+         GitHub → Settings → Developer settings → Personal access tokens
+
+Problem: Repository not empty
+Fix:     git push -u origin main --force
+         (or delete files from GitHub first)
+
+Problem: Large files error
+Fix:     git lfs install
+         git lfs track "*.png"
+         git add .gitattributes
+
+📊 PACKAGE STATS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Documentation:  12 Markdown files (~150 pages)
+Code:           7 Python files (~2,000 lines)
+Figures:        1 comprehensive diagram
+Logs:           1 experiment log
+Metadata:       6 files (LICENSE, setup.py, etc.)
+
+Total Size:     ~500 KB (without binary files)
+Total Files:    28 files in 13 folders
+
+🌟 KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Complete Gamma/Medium Theory
+✓ Dual regime γ_opt(N) scaling
+✓ Anti-scaling law: τ ~ N^-2.77
+✓ Glass transition at γ_c ≈ 0.86
+✓ Cognitive Lagoon AGI implementation
+✓ Production-ready Python code
+✓ Comprehensive documentation
+✓ MIT License
+
+🎓 CITATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@software{kojs2025gamma,
+  author = {Kojs, Paweł},
+  title = {Adaptonika Gamma Theory},
+  year = {2025},
+  url = {https://github.com/YOUR_USERNAME/adaptonika-gamma-theory}
+}
+
+📞 IMPORTANT LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Git Download:    https://git-scm.com/download/win
+GitHub Docs:     https://docs.github.com/
+GitHub Desktop:  https://desktop.github.com/
+Git Tutorial:    https://git-scm.com/book/en/v2
+
+🎊 AFTER UPLOAD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Add topics to repo (Settings → click ⚙️ next to About):
+   - adaptonika
+   - artificial-intelligence
+   - multi-agent-systems
+   - phase-transitions
+   - complex-systems
+
+2. Optional: Enable GitHub Pages (Settings → Pages)
+   Source: Deploy from branch
+   Branch: main / docs
+
+3. Optional: Replace README.md with README_ENHANCED.md
+   (has badges and better formatting)
+
+4. Share the link! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Version: 1.0.0
+Date: 2025-11-21
+Status: PRODUCTION READY ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For detailed instructions, see: 00_INSTRUKCJA_GITHUB.md
+For PowerShell script, run: GITHUB_UPLOAD_INSTRUCTIONS.ps1
+
+READY TO SHARE WITH THE WORLD! 🚀🌍

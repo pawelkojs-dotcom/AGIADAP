@@ -1,0 +1,115 @@
+# ========================================
+# MATPLOTLIBRC - AGI Adaptonika Style
+# ========================================
+# Global style for publication-quality figures
+# Compatible with: FIG1-FIG4 pipeline
+# Date: 2025-11-16
+# ========================================
+
+# FIGURE
+# ----------------------------------------
+figure.figsize      : 12, 7.2           # 16:9 aspect ratio
+figure.dpi          : 300               # Publication quality
+figure.facecolor    : white
+figure.edgecolor    : white
+figure.autolayout   : False
+
+# FONT
+# ----------------------------------------
+font.family         : sans-serif
+font.sans-serif     : DejaVu Sans, Arial, Helvetica, sans-serif
+font.size           : 11
+font.weight         : normal
+
+# AXES
+# ----------------------------------------
+axes.linewidth      : 1.0
+axes.titlesize      : 13
+axes.titleweight    : bold
+axes.labelsize      : 11
+axes.labelweight    : normal
+axes.labelcolor     : black
+axes.axisbelow      : True
+axes.grid           : True
+axes.facecolor      : white
+axes.edgecolor      : black
+axes.spines.left    : True
+axes.spines.bottom  : True
+axes.spines.top     : False             # Clean look
+axes.spines.right   : False             # Clean look
+
+# COLOR CYCLE (Daltonizm-friendly)
+# ----------------------------------------
+axes.prop_cycle : cycler('color', ['2563EB', '059669', 'F59E0B', '7C3AED', 'EF4444', '0EA5E9'])
+# Blue, Green, Orange, Purple, Red, Teal
+
+# GRID
+# ----------------------------------------
+grid.color          : gray
+grid.alpha          : 0.25              # Subtle
+grid.linestyle      : -
+grid.linewidth      : 0.5
+
+# LEGEND
+# ----------------------------------------
+legend.loc          : best
+legend.frameon      : False             # No frame
+legend.framealpha   : 0.8
+legend.facecolor    : inherit
+legend.edgecolor    : none
+legend.fancybox     : False
+legend.fontsize     : 10
+
+# LINES
+# ----------------------------------------
+lines.linewidth     : 2.0
+lines.markersize    : 6
+lines.markeredgewidth : 0.5
+
+# TICKS
+# ----------------------------------------
+xtick.major.size    : 4
+xtick.minor.size    : 2
+xtick.major.width   : 1.0
+xtick.minor.width   : 0.5
+xtick.labelsize     : 10
+xtick.direction     : out
+
+ytick.major.size    : 4
+ytick.minor.size    : 2
+ytick.major.width   : 1.0
+ytick.minor.width   : 0.5
+ytick.labelsize     : 10
+ytick.direction     : out
+
+# SAVING
+# ----------------------------------------
+savefig.dpi         : 300
+savefig.format      : png
+savefig.bbox        : tight
+savefig.pad_inches  : 0.1
+savefig.transparent : False
+savefig.facecolor   : white
+savefig.edgecolor   : white
+
+# MISC
+# ----------------------------------------
+figure.max_open_warning : 50
+
+# ========================================
+# USAGE NOTES
+# ========================================
+# This file is automatically loaded by matplotlib
+# when placed in the current working directory.
+#
+# All scripts (fig1-fig4) use this style.
+# No need to import or configure - just works!
+#
+# Colors are Daltonizm-friendly:
+# - Blue (#2563EB): Primary
+# - Green (#059669): Secondary  
+# - Orange (#F59E0B): Accent
+# - Purple (#7C3AED): Alternative
+# - Red (#EF4444): Alerts/warnings
+# - Teal (#0EA5E9): Additional
+# ========================================

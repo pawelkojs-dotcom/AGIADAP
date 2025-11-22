@@ -1,0 +1,757 @@
+2025-11-22 20:05:40,466 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=False)
+2025-11-22 20:05:40,466 - INFO - Validating architecture: test
+2025-11-22 20:05:40,466 - INFO - ✓ Bounds check passed for test
+2025-11-22 20:05:40,466 - INFO - ✓ Recursion check passed for test
+2025-11-22 20:05:40,466 - INFO - Validating architecture: bad
+2025-11-22 20:05:40,466 - ERROR - ✗ Bounds check failed for bad: Parameter bounds violated: theta=0.25 not in [0.1, 0.15]
+2025-11-22 20:05:40,466 - INFO - Validating architecture: HGEN_test
+2025-11-22 20:05:40,466 - INFO - ✓ Bounds check passed for HGEN_test
+2025-11-22 20:05:40,466 - ERROR - ✗ Recursion check failed for HGEN_test: Forbidden tokens detected in specification: ['HGEN']
+2025-11-22 20:05:47,053 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:05:47,054 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:05:47,054 - INFO - === SESSION START: TRL35_20251122_200547 ===
+2025-11-22 20:05:47,054 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:06:08,352 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:06:08,352 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:06:08,353 - INFO - === SESSION START: TRL35_20251122_200608 ===
+2025-11-22 20:06:08,353 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:06:42,660 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:06:42,660 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:06:42,660 - INFO - === SESSION START: TRL35_20251122_200642 ===
+2025-11-22 20:06:42,661 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C1
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C1
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C1
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C2
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C2
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:06:42,661 - INFO - Validating architecture: C2
+2025-11-22 20:06:42,661 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:06:42,661 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C3
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C3
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C3
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C4
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C4
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C4
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C5
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C5
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:06:42,662 - INFO - Validating architecture: C5
+2025-11-22 20:06:42,662 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:06:42,662 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A1
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A1
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A1
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A2
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A2
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A2
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A3
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A3
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:06:42,663 - INFO - Validating architecture: A3
+2025-11-22 20:06:42,663 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:06:42,663 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A4
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A4
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A4
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A5
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A5
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:06:42,664 - INFO - Validating architecture: A5
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:06:42,664 - INFO - Validating architecture: P1
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:06:42,664 - INFO - Validating architecture: P1
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:06:42,664 - INFO - Validating architecture: P1
+2025-11-22 20:06:42,664 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:06:42,664 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:06:42,664 - INFO - Validating architecture: P2
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P2
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P2
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P3
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P3
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P3
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P4
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P4
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P4
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:06:42,665 - INFO - Validating architecture: P5
+2025-11-22 20:06:42,665 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:06:42,665 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:06:42,666 - INFO - Validating architecture: P5
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:06:42,666 - INFO - Validating architecture: P5
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M1
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M1
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M1
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M2
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M2
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M2
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:06:42,666 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:06:42,666 - INFO - Validating architecture: M3
+2025-11-22 20:06:42,666 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M3
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M3
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M4
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M4
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M4
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M5
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M5
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:06:42,667 - INFO - Validating architecture: M5
+2025-11-22 20:06:42,667 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:06:42,667 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:06:42,668 - INFO - === SESSION END ===
+2025-11-22 20:07:23,620 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:07:23,620 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:07:23,620 - INFO - === SESSION START: TRL35_20251122_200723 ===
+2025-11-22 20:07:23,620 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:07:23,620 - INFO - Validating architecture: C1
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C1
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C1
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C2
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C2
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C2
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C3
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:23,621 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:23,621 - INFO - Validating architecture: C3
+2025-11-22 20:07:23,621 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C3
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C4
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C4
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C4
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C5
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C5
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:23,622 - INFO - Validating architecture: C5
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:23,622 - INFO - Validating architecture: A1
+2025-11-22 20:07:23,622 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:23,622 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:23,622 - INFO - Validating architecture: A1
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A1
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A2
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A2
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A2
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A3
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A3
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A3
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A4
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:23,623 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:23,623 - INFO - Validating architecture: A4
+2025-11-22 20:07:23,623 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:23,624 - INFO - Validating architecture: A4
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:23,624 - INFO - Validating architecture: A5
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:23,624 - INFO - Validating architecture: A5
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:23,624 - INFO - Validating architecture: A5
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:23,624 - INFO - Validating architecture: P1
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:23,624 - INFO - Validating architecture: P1
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:23,624 - INFO - Validating architecture: P1
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:23,624 - INFO - Validating architecture: P2
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:23,624 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:23,624 - INFO - Validating architecture: P2
+2025-11-22 20:07:23,624 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P2
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P3
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P3
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P3
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P4
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P4
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P4
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P5
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P5
+2025-11-22 20:07:23,625 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:23,625 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:23,625 - INFO - Validating architecture: P5
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M1
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M1
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M1
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M2
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M2
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M2
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M3
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M3
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:23,626 - INFO - Validating architecture: M3
+2025-11-22 20:07:23,626 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:23,626 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M4
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M4
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M4
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M5
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M5
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:23,627 - INFO - Validating architecture: M5
+2025-11-22 20:07:23,627 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:23,627 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:23,628 - INFO - === SESSION END ===
+2025-11-22 20:07:42,421 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:07:42,422 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:07:42,422 - INFO - === SESSION START: TRL35_20251122_200742 ===
+2025-11-22 20:07:42,422 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:07:42,422 - INFO - Validating architecture: C1
+2025-11-22 20:07:42,422 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:42,422 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:42,422 - INFO - Validating architecture: C1
+2025-11-22 20:07:42,422 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:42,422 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:42,422 - INFO - Validating architecture: C1
+2025-11-22 20:07:42,422 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:07:42,422 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C2
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C2
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C2
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C3
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C3
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C3
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C4
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C4
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:42,423 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:42,423 - INFO - Validating architecture: C4
+2025-11-22 20:07:42,423 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:07:42,424 - INFO - Validating architecture: C5
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:42,424 - INFO - Validating architecture: C5
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:42,424 - INFO - Validating architecture: C5
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A1
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A1
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A1
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A2
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A2
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:42,424 - INFO - Validating architecture: A2
+2025-11-22 20:07:42,424 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:07:42,424 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A3
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A3
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A3
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A4
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A4
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A4
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A5
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A5
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:42,425 - INFO - Validating architecture: A5
+2025-11-22 20:07:42,425 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:07:42,425 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P1
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P1
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P1
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P2
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P2
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P2
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P3
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P3
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P3
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:07:42,426 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:07:42,426 - INFO - Validating architecture: P4
+2025-11-22 20:07:42,426 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:42,427 - INFO - Validating architecture: P4
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:42,427 - INFO - Validating architecture: P4
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:07:42,427 - INFO - Validating architecture: P5
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:42,427 - INFO - Validating architecture: P5
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:42,427 - INFO - Validating architecture: P5
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:07:42,427 - INFO - Validating architecture: M1
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:42,427 - INFO - Validating architecture: M1
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:42,427 - INFO - Validating architecture: M1
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:07:42,427 - INFO - Validating architecture: M2
+2025-11-22 20:07:42,427 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:42,427 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:42,427 - INFO - Validating architecture: M2
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M2
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M3
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M3
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M3
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M4
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M4
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M4
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M5
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:42,428 - INFO - Validating architecture: M5
+2025-11-22 20:07:42,428 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:42,428 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:42,429 - INFO - Validating architecture: M5
+2025-11-22 20:07:42,429 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:07:42,429 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:07:42,429 - INFO - === SESSION END ===
+2025-11-22 20:08:06,454 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:08:06,455 - INFO - SafetyCoordinator initialized (Phase1=True, Phase2=True)
+2025-11-22 20:08:06,455 - INFO - === SESSION START: TRL35_20251122_200806 ===
+2025-11-22 20:08:06,455 - INFO - Metadata: {"campaign": "TRL 3.5", "mode": "heuristic", "tasks": 20, "runs_per_task": 3, "safety_phase": 2}
+2025-11-22 20:08:06,455 - INFO - Validating architecture: C1
+2025-11-22 20:08:06,455 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:08:06,455 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:08:06,455 - INFO - Validating architecture: C1
+2025-11-22 20:08:06,455 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:08:06,455 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:08:06,455 - INFO - Validating architecture: C1
+2025-11-22 20:08:06,455 - INFO - ✓ Bounds check passed for C1
+2025-11-22 20:08:06,455 - INFO - ✓ Recursion check passed for C1
+2025-11-22 20:08:06,455 - INFO - Validating architecture: C2
+2025-11-22 20:08:06,455 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:08:06,455 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:08:06,455 - INFO - Validating architecture: C2
+2025-11-22 20:08:06,455 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C2
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C2
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C2
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C3
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C3
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C3
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C3
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C3
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C4
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C4
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C4
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C4
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C4
+2025-11-22 20:08:06,456 - INFO - Validating architecture: C5
+2025-11-22 20:08:06,456 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:08:06,456 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:08:06,457 - INFO - Validating architecture: C5
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:08:06,457 - INFO - Validating architecture: C5
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for C5
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for C5
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A1
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A1
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A1
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A1
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A1
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A2
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A2
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A2
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A2
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A2
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A3
+2025-11-22 20:08:06,457 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:08:06,457 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:08:06,457 - INFO - Validating architecture: A3
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A3
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A3
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A3
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A4
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A4
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A4
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A4
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A4
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A5
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A5
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:08:06,458 - INFO - Validating architecture: A5
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for A5
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for A5
+2025-11-22 20:08:06,458 - INFO - Validating architecture: P1
+2025-11-22 20:08:06,458 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:08:06,458 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:08:06,458 - INFO - Validating architecture: P1
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P1
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P1
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P1
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P2
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P2
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P2
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P2
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P2
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P3
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P3
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P3
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P3
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P3
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P4
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:08:06,459 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:08:06,459 - INFO - Validating architecture: P4
+2025-11-22 20:08:06,459 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:08:06,460 - INFO - Validating architecture: P4
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for P4
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for P4
+2025-11-22 20:08:06,460 - INFO - Validating architecture: P5
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:08:06,460 - INFO - Validating architecture: P5
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:08:06,460 - INFO - Validating architecture: P5
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for P5
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for P5
+2025-11-22 20:08:06,460 - INFO - Validating architecture: M1
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:08:06,460 - INFO - Validating architecture: M1
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:08:06,460 - INFO - Validating architecture: M1
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for M1
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for M1
+2025-11-22 20:08:06,460 - INFO - Validating architecture: M2
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:08:06,460 - INFO - Validating architecture: M2
+2025-11-22 20:08:06,460 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:08:06,460 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M2
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M2
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M2
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M3
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M3
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M3
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M3
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M3
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M4
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M4
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M4
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M4
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M4
+2025-11-22 20:08:06,461 - INFO - Validating architecture: M5
+2025-11-22 20:08:06,461 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:08:06,461 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:08:06,462 - INFO - Validating architecture: M5
+2025-11-22 20:08:06,462 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:08:06,462 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:08:06,462 - INFO - Validating architecture: M5
+2025-11-22 20:08:06,462 - INFO - ✓ Bounds check passed for M5
+2025-11-22 20:08:06,462 - INFO - ✓ Recursion check passed for M5
+2025-11-22 20:08:06,462 - INFO - === SESSION END ===

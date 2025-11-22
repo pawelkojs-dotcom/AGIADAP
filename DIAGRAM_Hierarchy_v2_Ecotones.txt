@@ -1,0 +1,82 @@
+═══════════════════════════════════════════════════════════════════════════════
+  ADAPTONIC HIERARCHY WITH ECOTONES (Version 2: Detailed)
+═══════════════════════════════════════════════════════════════════════════════
+
+                         Env_max: σ-FIELD SUBSTRATE
+                    ┌──────────────────────────────────────┐
+                    │  Continuous 4D manifold (g_μν)       │
+                    │  Information Temperature: Θ(x,t)     │
+                    │                                      │
+                    │  ┌────────────┐    ┌────────────┐   │
+                    │  │ σ(Θ>0)     │    │ σ(Θ→0)     │   │
+                    │  │ ADAPTIVE   │◄──►│ FROZEN     │   │
+                    │  │ Dark Energy│    │ Dark Matter│   │
+                    │  └────────────┘    └────────────┘   │
+                    │         ↕ Type 3 Ecotone             │
+                    └──────────────────────────────────────┘
+                              ↕ Type 2 Ecotone
+                              ↕ (σ(Θ>0) ⟷ Baryons)
+                    ╔══════════════════════════════════════╗
+                    ║  QUANTIZED HIERARCHICAL LEVELS       ║
+                    ╠══════════════════════════════════════╣
+                    ║                                      ║
+                    ║  Level 4: ATOMS                      ║
+                    ║  • Discrete: H, He, C, O, ...        ║
+                    ║  • Quantum mechanics governs         ║
+                    ║  • F[atom] minimized                 ║
+                    ║           ↕                          ║
+                    ║  Level 3: NUCLEONS                   ║
+                    ║  • Protons, neutrons                 ║
+                    ║  • QCD bound states                  ║
+                    ║           ↕                          ║
+                    ║  Level 2: QUARKS                     ║
+                    ║  • u, d, s, c, b, t flavors          ║
+                    ║  • Gauge theory structure            ║
+                    ║           ↕                          ║
+                    ║  Level 1: QUANTUM FIELDS             ║
+                    ║  • Excitations → particles           ║
+                    ║  • Field operators                   ║
+                    ║                                      ║
+                    ╚══════════════════════════════════════╝
+                              ↕ Type 1 Ecotone
+                              ↕ (σ(Θ→0) ⟷ Baryons)
+                    ┌──────────────────────────────────────┐
+                    │        A_min: ELEMENTARY ADAPTON     │
+                    │                                      │
+                    │  • Fundamental adaptive unit         │
+                    │  • Minimizes: F = U - ΘS            │
+                    │  • (Nature unclear: fields? strings?)│
+                    └──────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  THREE ECOTONE TYPES: INTERFACE PHYSICS
+═══════════════════════════════════════════════════════════════════════════════
+
+  Type 1: σ(Θ→0) ⟷ Baryons
+  ├─ Environment: Galaxy halos (10-100 kpc)
+  ├─ Gradients: High ∇ρ_b, Low ∇Θ
+  └─ Observable: Rotation curves, strong lensing
+
+  Type 2: σ(Θ>0) ⟷ Baryons  
+  ├─ Environment: Filaments (1-50 Mpc)
+  ├─ Gradients: High ∇ρ_b, High ∇Θ
+  └─ Observable: BAO phase shift, filament lensing
+
+  Type 3: σ(Θ>0) ⟷ σ(Θ→0)
+  ├─ Environment: Void edges (20-100 Mpc)
+  ├─ Gradients: Zero ∇ρ_b, High ∇Θ
+  └─ Observable: Pure geometric lensing (NO baryons!)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  THEOREM 2 SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+
+  Env_max (σ-field):  CONTINUOUS  →  Cannot be quantized (no Q(Env_max))
+  Levels {L_i}:       DISCRETE    →  Quantizable (under regularity conditions)
+  Transitions:        ABRUPT      →  Phase-transition-like (no intermediates)
+
+  Consequence: Quantum mechanics applies to STRUCTURE, not SUBSTRATE
+
+═══════════════════════════════════════════════════════════════════════════════

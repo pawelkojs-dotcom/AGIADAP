@@ -1,0 +1,41 @@
+═══════════════════════════════════════════════════════════════════
+  ADAPTONIC HIERARCHY: FUNDAMENTAL STRUCTURE (Version 1: Simple)
+═══════════════════════════════════════════════════════════════════
+
+                    ┌─────────────────────────────────┐
+                    │      Env_max (σ-field)          │
+                    │                                 │
+                    │  Continuous substrate           │
+                    │  Θ(x,t) = Information temp      │
+                    │                                 │
+                    │  Phase 1: Θ→0 → Dark Matter    │
+                    │  Phase 2: Θ>0 → Dark Energy    │
+                    └─────────────────────────────────┘
+                              ↕ ECOTONES
+                    ┌─────────────────────────────────┐
+                    │    Hierarchical Levels {L_i}    │
+                    │                                 │
+                    │  Quantized structures           │
+                    │  Discrete adaptive states       │
+                    │                                 │
+                    │  L_4: Atoms                     │
+                    │  L_3: Nucleons                  │
+                    │  L_2: Quarks                    │
+                    │  L_1: Quantum fields            │
+                    └─────────────────────────────────┘
+                              ↕
+                    ┌─────────────────────────────────┐
+                    │      A_min (Elementary)         │
+                    │                                 │
+                    │  Fundamental adapton            │
+                    │  Minimizes F = U - ΘS          │
+                    └─────────────────────────────────┘
+
+
+KEY THEOREM 2 IMPLICATIONS:
+
+  ✓ Env_max: CONTINUOUS (cannot be quantized)
+  ✓ Levels {L_i}: DISCRETE (quantizable under regularity)
+  ✓ Transitions: ABRUPT (phase-transition-like)
+
+═══════════════════════════════════════════════════════════════════
