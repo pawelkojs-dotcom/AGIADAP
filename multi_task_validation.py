@@ -19,6 +19,7 @@ import random
 
 from intagi_constraints import INTAGIConstraints
 from intagi_claude_evaluator import HybridEvaluator
+from safety import SafetyCoordinator
 
 
 @dataclass
@@ -188,9 +189,13 @@ class MultiTaskValidator:
     Validates HGEN across multiple task types.
     """
     
-    def __init__(self, evaluator: HybridEvaluator):
+    def __init__(self, evaluator: HybridEvaluator, enable_safety_phase2: bool = False):
         self.evaluator = evaluator
         self.constraints = INTAGIConstraints()
+        self.safety = SafetyCoordinator(
+            enable_phase1=True,
+            enable_phase2=enable_safety_phase2
+        )
     
     def generate_config_for_task(self, task: TaskScenario) -> Dict[str, Any]:
         """

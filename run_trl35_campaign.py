@@ -57,7 +57,7 @@ def run_trl35_campaign(
     
     # Initialize components
     print("[1/6] Initializing evaluator...")
-    evaluator = HybridEvaluator(use_api=use_real_api)
+    evaluator = HybridEvaluator(use_claude=use_real_api)
     
     print("[2/6] Initializing validator with Safety Phase 2...")
     validator = MultiTaskValidator(evaluator, enable_safety_phase2=True)
